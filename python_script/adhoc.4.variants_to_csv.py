@@ -1,5 +1,5 @@
 #takes rare inherited vcf directory as input output summary csv
-# python /home/local/ARCS/hq2130/Exome_Seq/scripts/python_script/adhoc.4.variants_to_csv.py -v vcf_denovo -o CHD_MedExomeKit_denovo0318.csv
+# python /home/local/ARCS/hq2130/Exome_Seq/scripts/python_script/adhoc.4.variants_to_csv.py -v vcf_inherited -o CHD_MedExomeKit_inherited0318.csv
 import csv
 import gzip
 import os
@@ -36,10 +36,10 @@ for e in os.listdir(vcf_folder):
             if line[0] =='#':
                 if line.startswith('##INFO=<ID='):
                     head.append(line.split('=')[2].split(',')[0]) # head = [AD,DP]
-                else:
-                    break
+            else:
+                break
     break
-
+print head
 mutation = {}
 for e in os.listdir(vcf_folder):
     if e.endswith('.vcf'):
@@ -52,6 +52,7 @@ for e in os.listdir(vcf_folder):
                     
                     INFOstring = info[7]
                     INFOlist = info_list(INFOstring,head)
+                    
 
                     proband_geno = info[9].split(':')[0]
                     proband_info = info[9]

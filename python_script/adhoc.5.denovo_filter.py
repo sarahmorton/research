@@ -105,11 +105,14 @@ def variants_tune(filename,parameter):
             probands = variants['proband ID(GT:AD:DP:GQ:PL)'].split(';')
             parents = variants['parents'].split(';')
             AC = variants['AC'].split(',') 
+            
+                    
             if len(Alt.split(',')) > 2 : continue # remove multi-allel sites(3 or more alt)
             if 'MUC' in variants['GeneName']: continue # remove MUC
             if 'HLA' in variants['GeneName']: continue # remove HLA 
             if 'GL' in chrom: continue
-            SegDup = 0 if variants.get('SegDup') == 'NA' else variants.get('SegDup',':0').split(':')[1].split(',')[0]
+            
+            SegDup = 0 if variants.get('SegDup') == 'NA' else float(variants.get('SegDup',':0').split(':')[1].split(',')[0])
             if SegDup > parameter['general']['SegDup']: continue
          
             for i in range(len(probands)) :
@@ -121,8 +124,7 @@ def variants_tune(filename,parameter):
                 ID, geno = proband.split('(')
                 GT = geno[:-1].split(':')[0]
                 ref, alt = map(int,GT.split('/'))
-                newline[idx['ALT']] = Alt.split(',')[alt-1]
-
+                newline[idx['ALT']] = Alt.split(',')[alt-1]                
                 real_AC = int(AC[alt-1])
                 if real_AC > parameter['general']['AC']: continue
                 variant_id = '_'.join([ID,chrom,pos])

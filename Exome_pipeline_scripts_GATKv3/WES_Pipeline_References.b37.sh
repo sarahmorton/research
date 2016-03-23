@@ -35,10 +35,26 @@ export TGVCF="$EXOMRES/1000G_omni2.5.b37.sites.vcf "
 export INDEL1KG="$EXOMRES/1000G_phase1.indels.b37.vcf" # INDEL reference from 1000 genomes
 export DBSNP="$EXOMRES/dbsnp_138.b37.vcf" # dbSNP vcf from GATK
 export ONEKG="$EXOMRES/1000G_phase1.snps.high_confidence.b37.vcf" # 1000 genome SNPs vcf
+export HUMANREF="$EXOMRES/human_g1k_v37.fasta" # human 1000 genome assembly from GATK
 export ANNOVAR='/home/local/ARCS/hq2130/src/annovar' 
 export ANNHDB='$ANNOVAR/humandb/' #Location of annovar databases 
-export HUMANREF="$EXOMRES/human_g1k_v37.fasta" # human 1000 genome assembly from GATK
 
+
+
+
+#Capture Kit Target Files
+export NbgV2="$EXOMRES/CaptureKitBeds/SeqCap_EZ_Exome_v2.hg19.targets.bed"
+export NbgMedExome="$EXOMRES/CaptureKitBeds/MedExome_hg19_capture_targets_reformat.bed"
+
+# Ash's old
+export AgtV2="$EXOMRES/SureSelect_All_Exon_V2.b37.ordered.bed"
+export AgtV4="$EXOMRES/SureSelect_All_Exon_V4_b37.ordered.bed"
+export AgtV5="$EXOMRES/SureSelect_Human_All_Exon_V5_Covered.ordered.bed"
+export AgtV5UTR="$EXOMRES/SureSelect_Human_All_Exon_V5_UTRs_Covered.ordered.bed"
+export AshNbgV3="$EXOMRES/SeqCap_EZ_Exome_v3.b37.targets.bed"
+export IllTS="$EXOMRES/truseq_exome_targeted_regions.b37.ordered.bed"
+export BigTgt="$EXOMRES/custom_intervals/FullIntervals.bed"
+export TGTCODES="AgtV2:AgtV4:AgtV5:AgtV5UTR:NbgV2:NbgV3:NbgMedExome:IllTS:BigTgt"
 
 # no use below 
 export STHSH="$EXOMRES/b37/stampy_b37" # hash file for Stampy - omit ".sthash" extension for compatibility with Stampy
@@ -47,14 +63,3 @@ export STIDX="$EXOMRES/b37/stampy_b37" # genome index file for Stampy - omit ".s
 
 #GATK no-phone-home key
 export ETKEY="$EXOMRES/ads2202_c2b2.columbia.edu.key"
-
-#Capture Kit Target Files
-export AgtV2="$EXOMRES/SureSelect_All_Exon_V2.b37.ordered.bed"
-export AgtV4="$EXOMRES/SureSelect_All_Exon_V4_b37.ordered.bed"
-export AgtV5="$EXOMRES/SureSelect_Human_All_Exon_V5_Covered.ordered.bed"
-export AgtV5UTR="$EXOMRES/SureSelect_Human_All_Exon_V5_UTRs_Covered.ordered.bed"
-export NbgV2="$EXOMRES/SeqCap_EZ_Exome_v2.hg19.targets.bed"
-export NbgV3="$EXOMRES/SeqCap_EZ_Exome_v3.b37.targets.bed"
-export IllTS="$EXOMRES/truseq_exome_targeted_regions.b37.ordered.bed"
-export BigTgt="$EXOMRES/custom_intervals/FullIntervals.bed"
-export TGTCODES="AgtV2:AgtV4:AgtV5:AgtV5UTR:NbgV2:NbgV3:IllTS:BigTgt"

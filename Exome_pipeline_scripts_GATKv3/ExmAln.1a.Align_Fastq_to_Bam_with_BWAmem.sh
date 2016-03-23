@@ -90,7 +90,7 @@ BamNam=$(basename $fastq1 | sed s/_P1// | sed s/_R1// | sed s/.fq.gz// | sed s/.
 
 
 if [[ -z "$LogFil" ]]; then LogFil=$BamNam.FqB.log; fi # a name for the log file
-AlnDir=new.$BamNam.align; mkdir -p $AlnDir; cd $AlnDir # create working and move into a working directory
+AlnDir=f4.$BamNam.align; mkdir -p $AlnDir; cd $AlnDir # create working and move into a working directory
 AlnFil=$BamNam.bwamem.bam #filename for bwa-mem aligned file
 SrtFil=$BamNam.bwamem.sorted.bam #output file for sorted bam
 DdpFil=$BamNam.bwamem.mkdup.bam #output file with PCR duplicates marked
@@ -108,7 +108,7 @@ echo "----------------------------------------------------------------" >> $TmpL
 ###Align using BWA mem algorithm
 # align with BWA-mem | transform sam back to bam
 StepName="Align with BWA mem"
-StepCmd="bwa mem -M -t 6 -R \"$rgheader\" $REF $fastq1 $fastq2 2>>$TmpLog|
+StepCmd="bwa mem -M -t 3 -R \"$rgheader\" $REF $fastq1 $fastq2 2>>$TmpLog|
  samtools view -b - > $AlnFil"
 if [[ $FixMisencoded == "true" ]]; then 
  StepCmd="bwa mem -M -t 6 -R \"$rgheader\" $REF $fastq1 $fastq2 |
@@ -119,7 +119,7 @@ funcRunStep
 
 #Sort the bam file by coordinate
 StepName="Sort Bam using PICARD"
-StepCmd="java -Xmx4G -Djava.io.tmpdir=$TmpDir -jar $PICARD/picard.jar SortSam
+StepCmd="java -Xmx4G -XX:ParallelGCThreads=1 -Djava.io.tmpdir=$TmpDir -jar $PICARD/picard.jar SortSam
  INPUT=$AlnFil
  OUTPUT=$SrtFil
  SORT_ORDER=coordinate
@@ -130,7 +130,7 @@ rm $AlnFil #remove the "Aligned bam"
 
 #Mark the duplicates
 StepName="Mark PCR Duplicates using PICARD"
-StepCmd="java -Xmx4G -Djava.io.tmpdir=$TmpDir -jar $PICARD/picard.jar MarkDuplicates
+StepCmd="java -Xmx4G -XX:ParallelGCThreads=1 -Djava.io.tmpdir=$TmpDir -jar $PICARD/picard.jar MarkDuplicates
  INPUT=$SrtFil
  OUTPUT=$DdpFil
  METRICS_FILE=$DdpFil.dup.metrics.txt

@@ -41,6 +41,7 @@ with open(ped_name) as f:
 #print sample_index
 print len(sample_index)
 
+ChrCount=0
 with open(vcf_name, 'r') as f:
     head = []
     for line in f: 
@@ -59,11 +60,16 @@ with open(vcf_name, 'r') as f:
                     proband_index, father_index, mother_index = sample_index[proband][-3:]
                     trio = [all_samples[proband_index],all_samples[father_index],all_samples[mother_index]]
                     f[i].write(''.join(head))
-                    f[i].write('\t'.join(head_f + trio)+'\n')
-        
-        
+                    f[i].write('\t'.join(head_f + trio)+'\n')   
         else: 
-            data = line.split()
+            data = line.split('\t')
+
+            # verbose  
+            ChrPresent = data[0]
+            if ChrCount != ChrPresent:
+                print "Chromosome "+str(ChrPresent)
+                ChrCount=ChrPresent
+            
             INFOstring = data[7]
             for i in range(n):
                 proband = f[i].name.split('/')[-1].split('_')[0]
@@ -75,5 +81,3 @@ with open(vcf_name, 'r') as f:
 
 for fh in f:
     fh.close()
-
-print 'finished'

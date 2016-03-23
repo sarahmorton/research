@@ -51,7 +51,7 @@ vcf_name = options.VCFfile
 
 # make vcf trio dir
 trio_dir = os.path.dirname(vcf_name)
-denovo_dir = '/'.join(os.path.abspath(trio_dir).split('/')[:-1])+'/vcf_denovo/'
+denovo_dir = '/'.join(os.path.abspath(trio_dir).split('/')[:-1])+'/vcf_rare_denovo/'
 if not os.path.exists(denovo_dir):
     os.makedirs(denovo_dir)
 

@@ -97,7 +97,9 @@ do
 		printf "expand \n" >> $SCRF
 
 	else
-		printf "collapse \n" >> $SCRF
+		#printf "collapse \n" >> $SCRF
+		printf "squish \n" >> $SCRF
+		
 
 	fi
 	printf "maxPanelHeight 1000 \n" >> $SCRF

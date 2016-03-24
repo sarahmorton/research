@@ -49,7 +49,7 @@ def check_inherited(trio, name):# trio =[s,f,m]
     if proband_GT  in {'./.', '0/0'} : 
         inherited = False
     else:
-        # het
+        # homozygous
         if proband_GT[0] == proband_GT[-1]: 
             # find in both parents
             if proband_GT[-1] in Father_GT and proband_GT[-1] in Mother_GT:
@@ -93,7 +93,8 @@ vcf_name = options.VCFfile
 # make vcf trio dir
 trio_dir = os.path.dirname(vcf_name)
 print trio_dir
-inherited_dir = '/'.join(os.path.abspath(trio_dir).split('/')[:-1])+'/vcf_inherited/'
+
+inherited_dir = '/'.join(os.path.abspath(trio_dir).split('/')[:-1])+'/vcf_rare_inherited/'
 if not os.path.exists(inherited_dir):
     os.makedirs(inherited_dir)
 

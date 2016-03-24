@@ -6,9 +6,15 @@ seq 1 19 | parallel -j 12 --eta sh $EXOMPPLN/ExmAln.1a.Align_Fastq_to_Bam_with_B
 
 To do:
 finish pipeline part
+	add if process multi fastq line part
+
 
 finish qc part --- ash's hist plots
+			   --- doc part 
 			   --- my de novo counts
 
 finish analysis part
+			--- burden
+			--- add mapp and reapmask
+
 

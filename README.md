@@ -18,3 +18,7 @@ finish analysis part
 			--- add mapp and reapmask
 
 
+How to mount folder from home(through one hidden ssh)?
+using transmit
+http://superuser.com/questions/49838/how-to-transfer-files-when-given-two-ssh-accounts
+

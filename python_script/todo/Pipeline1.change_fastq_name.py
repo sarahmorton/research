@@ -4,6 +4,8 @@ directory = 'fastq/'
 directory = '/home/local/ARCS/hq2130/WES/fastq/temp/'
 directory ='/home/local/ARCS/hq2130/CHD_MedExomeKit/fastq/'
 directory = '/home/local/ARCS/hq2130/WES/fastq/'
+
+directory  = 'fastq/'
 all_id = set()
 multi_id = set()
 

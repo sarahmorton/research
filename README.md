@@ -17,8 +17,19 @@ finish analysis part
 			--- burden
 			--- add mapp and reapmask
 
+Tricks and knwo how:
 
 How to mount folder from home(through one hidden ssh)?
 using transmit
 http://superuser.com/questions/49838/how-to-transfer-files-when-given-two-ssh-accounts
+
+How to generate non-overlap CCDS bed file?
+#download from UCSC, extract ccds interval and use bedtools to  merge
+```
+$ wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/ccdsGene.txt.gz
+$ python extract_interval.py  
+$ bedtools sort -i test.bed > test.sorted.bed
+$ bedtools merge -i test.bed > test.sorted.bed
+```
+
 

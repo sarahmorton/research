@@ -45,6 +45,7 @@ export ANNHDB='$ANNOVAR/humandb/' #Location of annovar databases
 #Capture Kit Target Files
 export NbgV2="$EXOMRES/CaptureKitBeds/SeqCap_EZ_Exome_v2.hg19.targets.bed"
 export NbgMedExome="$EXOMRES/CaptureKitBeds/MedExome_hg19_capture_targets_reformat.bed"
+export CCDS="$EXOMRES/CaptureKitBeds/CCDS_hg19.bed"
 
 # Ash's old
 export AgtV2="$EXOMRES/SureSelect_All_Exon_V2.b37.ordered.bed"
@@ -54,7 +55,7 @@ export AgtV5UTR="$EXOMRES/SureSelect_Human_All_Exon_V5_UTRs_Covered.ordered.bed"
 export AshNbgV3="$EXOMRES/SeqCap_EZ_Exome_v3.b37.targets.bed"
 export IllTS="$EXOMRES/truseq_exome_targeted_regions.b37.ordered.bed"
 export BigTgt="$EXOMRES/custom_intervals/FullIntervals.bed"
-export TGTCODES="AgtV2:AgtV4:AgtV5:AgtV5UTR:NbgV2:NbgV3:NbgMedExome:IllTS:BigTgt"
+export TGTCODES="NbgV2:NbgMedExome:CCDS:AgtV2:AgtV4:AgtV5:AgtV5UTR:NbgV3:IllTS:BigTgt"
 
 # no use below 
 export STHSH="$EXOMRES/b37/stampy_b37" # hash file for Stampy - omit ".sthash" extension for compatibility with Stampy

@@ -17,7 +17,7 @@ finish analysis part
 			--- burden
 			--- add mapp and reapmask
 
-#Tricks and knwo how:
+#Tricks and know how:
 
 ###How to mount folder from home(through one hidden ssh)?
 

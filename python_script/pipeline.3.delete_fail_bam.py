@@ -1,5 +1,4 @@
-#
-
+#!/usr/bin/env python
 #pipeline.3.delete_fail_bam.py -b bam/ -d
 #
 #
@@ -25,8 +24,8 @@ def bamname(bam):
 
 
 for filename in os.listdir(bam_folder):  
-      
     if filename.endswith('.bam'):
+
         if filename.endswith('.bwamem.bam'):
             print filename, 'not finished, before sort'
             if deletebam:
@@ -37,27 +36,29 @@ for filename in os.listdir(bam_folder):
                 os.remove(bam_folder + '/' + filename)
         else:
             bam_name, bai_name, log_name = bamname(filename) 
-
             # has bam
+
+
             if os.path.exists(bam_folder+'/'+bam_name):
                 fewer, finish = False, False
                 
                 # check bam finish successfully 
-                with open(bam_folder+'/'+filename) as f:
+                with open(bam_folder+'/'+log_name) as f:
                     for line in f:
                         if 'file has fewer sequences' in line:
                             fewer = True
                         if '[main] CMD: bwa mem -M -t' in line:
                             finish = True
                 # failed
+
                 if fewer is True or finish is False:
                     print bam_name, fewer, finish
                     if deletebam:
                         os.remove( bam_folder + '/' + bam_name)
                         os.remove(bam_folder + '/' + bai_name)
                         os.remove(bam_folder + '/' + log_name)
-        	    else:
-            		print filename, 'good'
+                else:
+                    print filename, 'good'
             else:
                 print filename, 'something strange'
  

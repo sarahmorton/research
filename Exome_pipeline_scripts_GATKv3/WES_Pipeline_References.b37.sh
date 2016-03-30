@@ -1,7 +1,7 @@
 ## Resource Directories
 export EXOMPPLN="/home/local/ARCS/hq2130/Exome_Seq/scripts/Exome_pipeline_scripts_GATKv3" # Directory containing pipeline shell scripts
 export EXOMRES="/home/local/ARCS/hq2130/Exome_Seq/resources" # Directory containing resources/references for pipeline
-
+export EXOMPY='/home/local/ARCS/hq2130/Exome_Seq/scripts/python_script/'
 #bwa,samtools,picard,vcftools,bcftools
 export PATH="'/home/local/ARCS/hq2130/src/bin/:${PATH}"
 export PATH="/home/local/ARCS/hq2130/src/bwa/:${PATH}"
@@ -46,6 +46,10 @@ export ANNHDB='$ANNOVAR/humandb/' #Location of annovar databases
 export NbgV2="$EXOMRES/CaptureKitBeds/SeqCap_EZ_Exome_v2.hg19.targets.bed"
 export NbgMedExome="$EXOMRES/CaptureKitBeds/MedExome_hg19_capture_targets_reformat.bed"
 export CCDS="$EXOMRES/CaptureKitBeds/CCDS_hg19.bed"
+export REGN="$EXOMRES/CaptureKitBeds/Regenern_vcr_b37_100bpBuff.bed"
+
+export TGTCODES="NbgV2:NbgMedExome:CCDS:REGN:AgtV4:AgtV5:AgtV5UTR:NbgV3:IllTS:BigTgt"
+
 
 # Ash's old
 export AgtV2="$EXOMRES/SureSelect_All_Exon_V2.b37.ordered.bed"
@@ -55,12 +59,11 @@ export AgtV5UTR="$EXOMRES/SureSelect_Human_All_Exon_V5_UTRs_Covered.ordered.bed"
 export AshNbgV3="$EXOMRES/SeqCap_EZ_Exome_v3.b37.targets.bed"
 export IllTS="$EXOMRES/truseq_exome_targeted_regions.b37.ordered.bed"
 export BigTgt="$EXOMRES/custom_intervals/FullIntervals.bed"
-export TGTCODES="NbgV2:NbgMedExome:CCDS:AgtV2:AgtV4:AgtV5:AgtV5UTR:NbgV3:IllTS:BigTgt"
+
 
 # no use below 
 export STHSH="$EXOMRES/b37/stampy_b37" # hash file for Stampy - omit ".sthash" extension for compatibility with Stampy
 export STIDX="$EXOMRES/b37/stampy_b37" # genome index file for Stampy - omit ".stidx" extension for compatibility with Stampy
 
 
-#GATK no-phone-home key
-export ETKEY="$EXOMRES/ads2202_c2b2.columbia.edu.key"
+#GATK no-phone-home k

@@ -1,4 +1,6 @@
 https://github.com/macarthur-lab/igv_plotter
+https://github.com/chrisamiller/igvScreenshot
+
 
 Variants visualization scripts using IGV. 
 Based on scripts from Qiang Huang.

@@ -118,40 +118,4 @@ rm $VcfFil.idx
 #End Log
 funcWriteEndLog
 
-#Start Log File
-ProcessName="Genomic VCF generatation with GATK HaplotypeCaller" # Description of the script - used in log
-funcWriteStartLog
-
-##Run genomic VCF generation
-StepName="gVCF generation with GATK HaplotypeCaller"
-StepCmd="java -Xmx7G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
- -T HaplotypeCaller
- -R $REF
- -L $TgtBed
- -I $BamFil
- --genotyping_mode DISCOVERY
- -stand_emit_conf 10
- -stand_call_conf 30
- --emitRefConfidence GVCF
- --variant_index_type LINEAR
- --variant_index_parameter 128000
- -o $VcfFil
- -D $DBSNP
- --comp:HapMapV3 $HAPMAP 
- -pairHMM VECTOR_LOGLESS_CACHING
- -rf BadCigar
- $infofields
- --filter_mismatching_base_and_quals
- --interval_padding 100
- -log $GatkLog" #command to be run
-funcGatkAddArguments # Adds additional parameters to the GATK command depending on flags (e.g. -B or -F)
-funcRunStep
-
-##gzip and index the gVCF
-StepName="gzip and index the gVCF"
-StepCmd="bgzip $VcfFil; tabix -f -p vcf $VcfFil.gz"
-funcRunStep
-rm $VcfFil.idx
-
-#End Log
-funcWriteEndLog
+#End

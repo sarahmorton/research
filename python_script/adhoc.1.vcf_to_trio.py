@@ -1,3 +1,5 @@
+#!~/src/anaconda2/bin/python
+
 import gzip
 import os
 from optparse import OptionParser
@@ -5,10 +7,12 @@ from optparse import OptionParser
 
 '''
 takes vcf and ped as input, seperate the vcf by trios, exclude varaints are all missing the the trio
+example:    python adhoc.1.VcfTotrio.py -v PCGC_target3_0223.vcf -p CHD_MedExomeKit.ped
 '''
 # Basic Input Files, required   
-#example:    python adhoc.1.VcfTotrio.py -v PCGC_target3_0223.vcf -p CHD_MedExomeKit.ped
-parser = OptionParser()
+
+usage = "usage: %prog [options] arg1 arg2"
+parser = OptionParser(usage=usage)
 parser.add_option("-v", "--vcf", dest="VCFfile",help="input VCF file", metavar="VCFfile")
 parser.add_option("-p", "--ped", dest="PEDfile",help="input PED file", metavar="PEDfile")
 
@@ -30,16 +34,22 @@ with open(vcf_name, 'r') as f:
 
 # ulimit -n 2048 
 sample_index={}
+included_sample = set()
 with open(ped_name) as f:
     for line in f:
         family, proband,father,mother = line.split()[:4]
         if proband in samples and father in samples and mother in samples:
             sample_index[proband]=[father,mother,samples.index(proband),samples.index(father),samples.index(mother)]
+            included_sample.add(father)
+            included_sample.add(mother)
+            included_sample.add(proband)
+
         else:
             print line
 
 #print sample_index
-print len(sample_index)
+print 'nontriosamples:', set(samples) - included_sample
+print 'trios:',len(sample_index)
 
 ChrCount=0
 with open(vcf_name, 'r') as f:

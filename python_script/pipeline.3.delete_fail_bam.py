@@ -6,10 +6,11 @@
 import os 
 from optparse import OptionParser
 
-parser = OptionParser()
+usage = "usage: %prog [options] arg1 arg2"
+parser = OptionParser(usage=usage)
 parser.add_option("-b", "--bN", dest="BAMfile",help="input BAM folder", metavar="BAMfile")
-parser.set_defaults(delete=False)
-parser.add_option("-d", "--delete", action='store_true', dest="delete", help="delete fail bams")
+#parser.set_defaults(delete=False)
+parser.add_option("-d", "--delete", action='store_false', dest="delete", help="delete fail bams")
 
 (options, args) = parser.parse_args()
 bam_folder = options.BAMfile

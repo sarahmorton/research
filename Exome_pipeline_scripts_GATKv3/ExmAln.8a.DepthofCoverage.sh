@@ -66,7 +66,7 @@ source $RefFil
 
 #Load script library
 source $EXOMPPLN/exome.lib.sh #library functions begin "func" #library functions begin "func"
-
+funcGetTargetFile
 #Set Local Variables
 InpFil=`readlink -f $InpFil` #resolve absolute path to bam
 BamFil=$(tail -n+$ArrNum $InpFil | head -n 1) 

@@ -41,6 +41,7 @@ SCRF="igv_batch_script_v4.txt"
 touch $SCRF
 printf "#! /bin/bash\n" >> $SCRF
 
+
 kk=1
 BAMS0="OO"
 while read line
@@ -87,8 +88,8 @@ do
 	BAMS0=$BAMS
 	
 	
-	let "START=$VALUE - 25"
-	let "END=$VALUE + 25"
+	let "START=$VALUE - 20"
+	let "END=$VALUE + 20"
 	printf "goto chr$NAME:$START-$END \n" >> $SCRF
 	printf "sort base \n" >> $SCRF
 	if [[ $ExpandMode == "true" ]]; then
@@ -102,7 +103,7 @@ do
 		
 
 	fi
-	printf "maxPanelHeight 1000 \n" >> $SCRF
+	printf "maxPanelHeight 300 \n" >> $SCRF
 	printf "snapshot $SAMPLE,$NAME.$START.$END.png \n" >> $SCRF
 	printf "\n" >> $SCRF
 	

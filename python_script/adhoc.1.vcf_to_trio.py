@@ -21,8 +21,8 @@ vcf_name = options.VCFfile
 ped_name = options.PEDfile
 
 # make vcf trio dir
-trio_dir = os.path.dirname(vcf_name)
-trio_dir_name = trio_dir+'vcf_trio/'
+trio_dir = '/'.join(os.path.abspath(vcf_name).split('/')[:-1])
+trio_dir_name = trio_dir+'/vcf_trio/'
 if not os.path.exists(trio_dir_name):
     os.makedirs(trio_dir_name)
 
@@ -44,9 +44,6 @@ with open(ped_name) as f:
             included_sample.add(mother)
             included_sample.add(proband)
 
-        else:
-            print line
-
 #print sample_index
 print 'nontriosamples:', set(samples) - included_sample
 print 'trios:',len(sample_index)
@@ -60,7 +57,7 @@ with open(vcf_name, 'r') as f:
                 # format and info line
                 head.append(line)
             else: #
-                all_samples = line.split()
+                all_samples = line.strip().split('\t')
                 head_f = all_samples[:9] # CHROM ... FORMAT
   	 
                 f = [open(trio_dir_name+ '_'.join([proband, sample_index[proband][0], sample_index[proband][1] ]) + '.vcf', "w") for proband in sample_index]
@@ -72,7 +69,7 @@ with open(vcf_name, 'r') as f:
                     f[i].write(''.join(head))
                     f[i].write('\t'.join(head_f + trio)+'\n')   
         else: 
-            data = line.split('\t')
+            data = line.strip().split('\t')
 
             # verbose  
             ChrPresent = data[0]
@@ -85,9 +82,10 @@ with open(vcf_name, 'r') as f:
                 proband = f[i].name.split('/')[-1].split('_')[0]
                 proband_index, father_index, mother_index = sample_index[proband][-3:]
                 trio = [data[proband_index],data[father_index],data[mother_index]]
-                trio_GT = [data[proband_index].split(':')[0],data[father_index].split(':')[0],data[mother_index].split(':')[0]]
-                if trio_GT != ['./.','./.','./.'] and trio_GT != ['0/0','0/0','0/0'] :
-                    f[i].write("\t".join(data[:9]+trio)+'\n')
+                trio_GT = [data[proband_index].split(':')[0].replace('.','0'),\
+                data[father_index].split(':')[0].replace('.','0'),data[mother_index].split(':')[0].replace('.','0')]
+                if trio_GT != ['0/0','0/0','0/0'] :
+                    f[i].write('\t'.join(data[:9]+trio)+'\n')
 
 for fh in f:
     fh.close()

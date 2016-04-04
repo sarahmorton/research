@@ -63,14 +63,8 @@ source $EXOMPPLN/exome.lib.sh #library functions begin "func" #library functions
 
 #Set local Variables
 VcfFil=`readlink -f $InpFil` #resolve absolute path to vcf
-HapChec=$(less $VcfFil | head -n 20 | grep "HaplotypeCaller" | wc -l) #check which VC tool was used
-if [[ $HapChec -gt 0 ]]; then
-    InfoFields="-an DP -an QD -an FS -an MQRankSum -an ReadPosRankSum" 
-    #InfoFields="-an DP -an QD -an FS -an ReadPosRankSum"
-else
-    InfoFields="-an DP -an QD -an FS -an MQRankSum -an ReadPosRankSum -an HaplotypeScore"
-    #InfoFields="-an DP -an QD -an FS -an ReadPosRankSum"
-fi
+InfoFields="-an QD -an MQRankSum -an ReadPosRankSum -an FS -an SOR" 
+
 VcfNam=`basename $VcfFil | sed s/.gz$// | sed s/.vcf$// | sed s/.annotated$// | sed s/.list//` #basename for outputs
 if [[ -z "$LogFil" ]];then LogFil=$VcfNam.VQSR.log; fi # a name for the log file
 GatkLog=$VcfNam.VQSR.gatklog #a log for GATK to output to, this is then trimmed and added to the script log
@@ -95,7 +89,14 @@ StepCmd="java -Xmx9G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
  -mode SNP
  -tranche 100.0
  -tranche 99.9
+ -tranche 99.8
+ -tranche 99.7
+ -tranche 99.6
  -tranche 99.5
+ -tranche 99.4
+ -tranche 99.3
+ -tranche 99.2 
+ -tranche 99.1
  -tranche 99.0
  -tranche 90.0
  -recalFile $VcfNam.recalibrate_SNP.recal
@@ -127,6 +128,7 @@ if [[ "$NoRecal" == "false" ]]; then
 fi
 
 ##Build the InDel recalibration model
+InfoFields="-an QD -an MQRankSum -an ReadPosRankSum -an FS -an SOR" 
 StepName="Build the InDel recalibration model with GATK VariantRecalibrator" # Description of this step - used in log
 StepCmd="java -Xmx9G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
  -T VariantRecalibrator
@@ -138,7 +140,14 @@ StepCmd="java -Xmx9G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
  -mode INDEL
  -tranche 100.0
  -tranche 99.9
+ -tranche 99.8
+ -tranche 99.7
+ -tranche 99.6
  -tranche 99.5
+ -tranche 99.4
+ -tranche 99.3
+ -tranche 99.2 
+ -tranche 99.1
  -tranche 99.0
  -tranche 90.0
  --maxGaussians 4
@@ -185,10 +194,8 @@ StepCmd="java -Xmx9G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
  --filterName \"FS_Bad_SNP\"
  --filterExpression \"FS>=25.0&&FS<40.0\"
  --filterName \"FS_Mid_SNP\"
- --filterExpression \"QD<2.5\"
+ --filterExpression \"QD<2\"
  --filterName \"QD_Bad_SNP\"
- --filterExpression \"QD>=2.5&&QD<4.0\"
- --filterName \"QD_Mid_SNP\"
  --filterExpression \"QD<1.0\"
  --filterName \"LowQD_Indel\"
  --filterExpression \"FS>=25.0\"
@@ -198,9 +205,9 @@ StepCmd="java -Xmx9G -Djava.io.tmpdir=$TmpDir -jar $GATKJAR
  --missingValuesInExpressionsShouldEvaluateAsFailing
  -log $GatkLog" #command to be run
 funcGatkAddArguments # Adds additional parameters to the GATK command depending on flags e.g. -B or -F
-funcRunStep
-rm $VcfFil $VcfFil.idx
-VcfFil=$VcfNam.hardfiltered.vcf
+#funcRunStep
+#rm $VcfFil $VcfFil.idx
+#VcfFil=$VcfNam.hardfiltered.vcf
 
 #gzip and index
 StepName="Gzip the vcf and index" # Description of this step - used in log

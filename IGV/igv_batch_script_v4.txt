@@ -1,0 +1,2262 @@
+#! /bin/bash
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1258FBBa.40278.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1258FBBC.136313.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1258FBBB.136312.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:38259146-38259186 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1258FBBa.40278.bam.bwamem.mkdup.bam,H1258FBBC.136313.bam.bwamem.mkdup.bam,H1258FBBB.136312.bam.bwamem.mkdup.bam,7.38259146.38259186.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8046MGHA.136334.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8046MGHC.136336.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8046MGHB.136335.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:123353271-123353311 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H8046MGHA.136334.bam.bwamem.mkdup.bam,H8046MGHC.136336.bam.bwamem.mkdup.bam,H8046MGHB.136335.bam.bwamem.mkdup.bam,10.123353271.123353311.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:50792700-50792740 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,19.50792700.50792740.png 
+
+goto chr5:174869141-174869181 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,5.174869141.174869181.png 
+
+goto chr15:72057455-72057495 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,15.72057455.72057495.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWC.136343.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWB.136342.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr22:37637627-37637667 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1008SAWa.bwamem.mkdup.bam,M1008SAWC.136343.bam.bwamem.mkdup.bam,M1008SAWB.136342.bam.bwamem.mkdup.bam,22.37637627.37637667.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:61830815-61830855 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,10.61830815.61830855.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:137790477-137790517 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,3.137790477.137790517.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOC.136349.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOB.136348.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:157160393-157160433 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1017CHOa.bwamem.mkdup.bam,M1017CHOC.136349.bam.bwamem.mkdup.bam,M1017CHOB.136348.bam.bwamem.mkdup.bam,3.157160393.157160433.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOC.136349.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOB.136348.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1011MARC.136345.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1011MARB.136344.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr22:22842618-22842658 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1011MARa.bwamem.mkdup.bam,M1011MARC.136345.bam.bwamem.mkdup.bam,M1011MARB.136344.bam.bwamem.mkdup.bam,22.22842618.22842658.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOC.136349.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1017CHOB.136348.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1011MARC.136345.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1011MARB.136344.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:58004966-58005006 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,19.58004966.58005006.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1069VBUa.40267.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1069UBUC.136280.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1069UBUB.136279.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:135570419-135570459 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1069VBUa.40267.bam.bwamem.mkdup.bam,H1069UBUC.136280.bam.bwamem.mkdup.bam,H1069UBUB.136279.bam.bwamem.mkdup.bam,X.135570419.135570459.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:226447484-226447524 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,2.226447484.226447524.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:70187346-70187386 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,16.70187346.70187386.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1101NELa.48413.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1101NELC.136183.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1101NELB.136182.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:22476751-22476791 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1101NELa.48413.bam.bwamem.mkdup.bam,C1101NELC.136183.bam.bwamem.mkdup.bam,C1101NELB.136182.bam.bwamem.mkdup.bam,8.22476751.22476791.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:53467042-53467082 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,12.53467042.53467082.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:176992592-176992632 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1086GARa.40208.bam.bwamem.mkdup.bam,C1086GARC.136173.bam.bwamem.mkdup.bam,C1086GARB.136172.bam.bwamem.mkdup.bam,1.176992592.176992632.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDC.136211.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDB.136210.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr22:43610122-43610162 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1180ncda.bwamem.mkdup.bam,C1180NCDC.136211.bam.bwamem.mkdup.bam,C1180NCDB.136210.bam.bwamem.mkdup.bam,22.43610122.43610162.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:28023370-28023410 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,10.28023370.28023410.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:140994064-140994104 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1228KKFa.bwamem.mkdup.bam,C1228KKFC.136225.bam.bwamem.mkdup.bam,C1228KKFB.136224.bam.bwamem.mkdup.bam,X.140994064.140994104.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:6443259-6443299 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,12.6443259.6443299.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENA.128243.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENC.128245.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENB.128244.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:57789810-57789850 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot M1079QENA.128243.bam.bwamem.mkdup.bam,M1079QENC.128245.bam.bwamem.mkdup.bam,M1079QENB.128244.bam.bwamem.mkdup.bam,16.57789810.57789850.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENA.128243.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENC.128245.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENB.128244.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPC.136299.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPB.136298.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:73827349-73827389 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1168QBPa.bwamem.mkdup.bam,H1168QBPC.136299.bam.bwamem.mkdup.bam,H1168QBPB.136298.bam.bwamem.mkdup.bam,17.73827349.73827389.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENA.128243.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENC.128245.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENB.128244.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPC.136299.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPB.136298.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1204DAIC.136221.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1204DAIB.136220.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr22:38916009-38916049 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1204daia.bwamem.mkdup.bam,C1204DAIC.136221.bam.bwamem.mkdup.bam,C1204DAIB.136220.bam.bwamem.mkdup.bam,22.38916009.38916049.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENA.128243.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENC.128245.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1079QENB.128244.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPC.136299.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1168QBPB.136298.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1204DAIC.136221.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1204DAIB.136220.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:4511532-4511572 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,19.4511532.4511572.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:140258080-140258120 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,4.140258080.140258120.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:101433137-101433177 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,15.101433137.101433177.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr20:34776307-34776347 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,20.34776307.34776347.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:101206463-101206503 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,8.101206463.101206503.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:151378852-151378892 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,1.151378852.151378892.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVC.136213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVB.136212.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:1827987-1828027 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1181SEVa.bwamem.mkdup.bam,C1181SEVC.136213.bam.bwamem.mkdup.bam,C1181SEVB.136212.bam.bwamem.mkdup.bam,16.1827987.1828027.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-4-017.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17F.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17M.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:28331792-28331832 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-4-017.bwamem.mkdup.bam,CDH4-17F.bwamem.mkdup.bam,CDH4-17M.bwamem.mkdup.bam,16.28331792.28331832.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr14:99642105-99642145 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,14.99642105.99642145.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:89167097-89167137 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,16.89167097.89167137.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:190250779-190250819 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,1.190250779.190250819.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:78938714-78938754 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,5.78938714.78938754.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-403.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH399.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH400.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:151379367-151379407 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-403.bwamem.mkdup.bam,CDH399.bwamem.mkdup.bam,CDH400.bwamem.mkdup.bam,1.151379367.151379407.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-403.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH399.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH400.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:4536218-4536258 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,17.4536218.4536258.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:101953088-101953128 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,10.101953088.101953128.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53_AAAGCA_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53F_CAAAAG_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4_53M_GAAACC_AC430AACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:3786755-3786795 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,17.3786755.3786795.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr13:19751418-19751458 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,13.19751418.19751458.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:1784273-1784313 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,7.1784273.1784313.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C8031LINA.128210.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C8031LINC.128212.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C8031LINB.128211.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:55994253-55994293 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C8031LINA.128210.bam.bwamem.mkdup.bam,C8031LINC.128212.bam.bwamem.mkdup.bam,C8031LINB.128211.bam.bwamem.mkdup.bam,19.55994253.55994293.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:56223775-56223815 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,19.56223775.56223815.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH627.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH621.bwamem.mkdup.merged.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH622.bwamem.mkdup.merged.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:129037227-129037267 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH627.bwamem.mkdup.bam,CDH621.bwamem.mkdup.merged.bam,CDH622.bwamem.mkdup.merged.bam,5.129037227.129037267.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH627.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH621.bwamem.mkdup.merged.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH622.bwamem.mkdup.merged.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:140994070-140994110 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1228KKFa.bwamem.mkdup.bam,C1228KKFC.136225.bam.bwamem.mkdup.bam,C1228KKFB.136224.bam.bwamem.mkdup.bam,X.140994070.140994110.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLA.136325.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLC.136327.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLB.136326.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:20948849-20948889 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H8040NYLA.136325.bam.bwamem.mkdup.bam,H8040NYLC.136327.bam.bwamem.mkdup.bam,H8040NYLB.136326.bam.bwamem.mkdup.bam,9.20948849.20948889.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLA.136325.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLC.136327.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLB.136326.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:149547252-149547292 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,7.149547252.149547292.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLA.136325.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLC.136327.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8040NYLB.136326.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEC.136237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEB.136236.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:25633183-25633223 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1336HMEa.bwamem.mkdup.bam,C1336HMEC.136237.bam.bwamem.mkdup.bam,C1336HMEB.136236.bam.bwamem.mkdup.bam,1.25633183.25633223.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH596_AAACAT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH625_CAAAAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH594_CTTGTA_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:119302795-119302835 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH596_AAACAT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,CDH625_CAAAAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,CDH594_CTTGTA_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,10.119302795.119302835.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:65026582-65026622 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,17.65026582.65026622.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:64085024-64085064 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,3.64085024.64085064.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH627.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH621.bwamem.mkdup.merged.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH622.bwamem.mkdup.merged.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr14:55455763-55455803 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH627.bwamem.mkdup.bam,CDH621.bwamem.mkdup.merged.bam,CDH622.bwamem.mkdup.merged.bam,14.55455763.55455803.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH84.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:85687440-85687480 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH84.merge.merged.mkdup.bam,CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,4.85687440.85687480.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH84.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:8701944-8701984 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1038MWLa.bwamem.mkdup.bam,M1038MWLC.136355.bam.bwamem.mkdup.bam,M1038MWLB.136354.bam.bwamem.mkdup.bam,17.8701944.8701984.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:722078-722118 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,11.722078.722118.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:157999222-157999262 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,4.157999222.157999262.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:27369079-27369119 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1228KKFa.bwamem.mkdup.bam,C1228KKFC.136225.bam.bwamem.mkdup.bam,C1228KKFB.136224.bam.bwamem.mkdup.bam,6.27369079.27369119.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH206_GCCAAT_AC430AACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH204.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH205.merge.merged.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:12788889-12788929 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH206_GCCAAT_AC430AACXX_L003_001.R1.bwamem.mkdup.bam,CDH204.merge.merged.mkdup.bam,CDH205.merge.merged.mkdup.bam,12.12788889.12788929.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:11648336-11648376 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,17.11648336.11648376.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1080SHAC.136171.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1080SHAB.136170.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:14974622-14974662 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1080SHAa.bwamem.mkdup.bam,C1080SHAC.136171.bam.bwamem.mkdup.bam,C1080SHAB.136170.bam.bwamem.mkdup.bam,3.14974622.14974662.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:167435925-167435965 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,6.167435925.167435965.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:176722282-176722322 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,5.176722282.176722322.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDC.136211.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDB.136210.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:265204-265244 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1180ncda.bwamem.mkdup.bam,C1180NCDC.136211.bam.bwamem.mkdup.bam,C1180NCDB.136210.bam.bwamem.mkdup.bam,4.265204.265244.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:25245736-25245776 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,1.25245736.25245776.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:49957035-49957075 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,X.49957035.49957075.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:145006577-145006617 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,8.145006577.145006617.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1153PORa.49485.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORC.136201.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORB.136200.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:4910619-4910659 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1153PORa.49485.bam.bwamem.mkdup.bam,C1153PORC.136201.bam.bwamem.mkdup.bam,C1153PORB.136200.bam.bwamem.mkdup.bam,17.4910619.4910659.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1153PORa.49485.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORC.136201.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORB.136200.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAC.136259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAB.136258.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:48366968-48367008 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1015MOAa.bwamem.mkdup.bam,H1015MOAC.136259.bam.bwamem.mkdup.bam,H1015MOAB.136258.bam.bwamem.mkdup.bam,11.48366968.48367008.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr20:48252973-48253013 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,20.48252973.48253013.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:32410637-32410677 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,11.32410637.32410677.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr21:47924297-47924337 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,21.47924297.47924337.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:129861399-129861439 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1038MWLa.bwamem.mkdup.bam,M1038MWLC.136355.bam.bwamem.mkdup.bam,M1038MWLB.136354.bam.bwamem.mkdup.bam,10.129861399.129861439.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:58805993-58806033 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,19.58805993.58806033.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr18:76752507-76752547 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,18.76752507.76752547.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1081OEOA.136360.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1081OEOC.128248.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1081OEOB.128247.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:238234264-238234304 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot M1081OEOA.136360.bam.bwamem.mkdup.bam,M1081OEOC.128248.bam.bwamem.mkdup.bam,M1081OEOB.128247.bam.bwamem.mkdup.bam,2.238234264.238234304.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:38191527-38191567 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,17.38191527.38191567.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMC.136190.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMB.136189.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:24187487-24187527 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1137BNMa.bwamem.mkdup.bam,C1137BNMC.136190.bam.bwamem.mkdup.bam,C1137BNMB.136189.bam.bwamem.mkdup.bam,8.24187487.24187527.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMC.136190.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMB.136189.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVC.136213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVB.136212.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:56468450-56468490 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1181SEVa.bwamem.mkdup.bam,C1181SEVC.136213.bam.bwamem.mkdup.bam,C1181SEVB.136212.bam.bwamem.mkdup.bam,11.56468450.56468490.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMC.136190.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMB.136189.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVC.136213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVB.136212.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEC.136237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEB.136236.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:17312565-17312605 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1336HMEa.bwamem.mkdup.bam,C1336HMEC.136237.bam.bwamem.mkdup.bam,C1336HMEB.136236.bam.bwamem.mkdup.bam,1.17312565.17312605.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH482_ACTTGA_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH484_GATCAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH489_TAGCTT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMC.136190.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMB.136189.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVC.136213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1181SEVB.136212.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEC.136237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEB.136236.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1109AZRC.136286.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1109AZRB.136285.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:48539176-48539216 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1109AZRa.bwamem.mkdup.bam,H1109AZRC.136286.bam.bwamem.mkdup.bam,H1109AZRB.136285.bam.bwamem.mkdup.bam,15.48539176.48539216.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBA.128234.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBC.128236.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBB.128235.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:3447865-3447905 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1264AEBA.128234.bam.bwamem.mkdup.bam,H1264AEBC.128236.bam.bwamem.mkdup.bam,H1264AEBB.128235.bam.bwamem.mkdup.bam,4.3447865.3447905.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:113657329-113657369 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1086GARa.40208.bam.bwamem.mkdup.bam,C1086GARC.136173.bam.bwamem.mkdup.bam,C1086GARB.136172.bam.bwamem.mkdup.bam,8.113657329.113657369.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1285JPTA.128237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1285JPTC.128239.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1285JPTB.128238.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:40720981-40721021 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1285JPTA.128237.bam.bwamem.mkdup.bam,H1285JPTC.128239.bam.bwamem.mkdup.bam,H1285JPTB.128238.bam.bwamem.mkdup.bam,19.40720981.40721021.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:31721121-31721161 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,6.31721121.31721161.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:157174959-157174999 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,7.157174959.157174999.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOA.128204.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOC.128206.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOB.128205.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:166987178-166987218 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1344RFOA.128204.bam.bwamem.mkdup.bam,C1344RFOC.128206.bam.bwamem.mkdup.bam,C1344RFOB.128205.bam.bwamem.mkdup.bam,1.166987178.166987218.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELA.128168.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELC.129672.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELB.128169.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:130931196-130931236 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1044WELA.128168.bam.bwamem.mkdup.bam,C1044WELC.129672.bam.bwamem.mkdup.bam,C1044WELB.128169.bam.bwamem.mkdup.bam,2.130931196.130931236.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEA.129671.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEC.128167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEB.128166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:45123943-45123983 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1027OWEA.129671.bam.bwamem.mkdup.bam,C1027OWEC.128167.bam.bwamem.mkdup.bam,C1027OWEB.128166.bam.bwamem.mkdup.bam,7.45123943.45123983.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:139404183-139404223 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,9.139404183.139404223.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1147UUQa.49476.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1147UUQC.136292.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1147UUQB.136291.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:72094198-72094238 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1147UUQa.49476.bam.bwamem.mkdup.bam,H1147UUQC.136292.bam.bwamem.mkdup.bam,H1147UUQB.136291.bam.bwamem.mkdup.bam,16.72094198.72094238.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:64085023-64085063 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,3.64085023.64085063.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:27048216-27048256 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,9.27048216.27048256.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDC.136211.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDB.136210.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:96397651-96397691 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1180ncda.bwamem.mkdup.bam,C1180NCDC.136211.bam.bwamem.mkdup.bam,C1180NCDB.136210.bam.bwamem.mkdup.bam,12.96397651.96397691.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr14:23884234-23884274 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,14.23884234.23884274.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1141PCOC.136195.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1141PCOB.136194.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:241725541-241725581 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1141PCOa.bwamem.mkdup.bam,C1141PCOC.136195.bam.bwamem.mkdup.bam,C1141PCOB.136194.bam.bwamem.mkdup.bam,1.241725541.241725581.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH253R_007_007_CAGATC-CAGATC_L004.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH251R_ATCACG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH252_AAAGCA_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:109742524-109742564 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH253R_007_007_CAGATC-CAGATC_L004.bwamem.mkdup.bam,CDH251R_ATCACG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH252_AAAGCA_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,1.109742524.109742564.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:3250998-3251038 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,19.3250998.3251038.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1229WNEA.128195.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1229WNEC.128197.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1229WNEB.128196.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:58437216-58437256 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1229WNEA.128195.bam.bwamem.mkdup.bam,C1229WNEC.128197.bam.bwamem.mkdup.bam,C1229WNEB.128196.bam.bwamem.mkdup.bam,16.58437216.58437256.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1153PORa.49485.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORC.136201.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1153PORB.136200.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:27436054-27436094 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1153PORa.49485.bam.bwamem.mkdup.bam,C1153PORC.136201.bam.bwamem.mkdup.bam,C1153PORB.136200.bam.bwamem.mkdup.bam,3.27436054.27436094.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:46449935-46449975 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,3.46449935.46449975.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:131481233-131481273 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,6.131481233.131481273.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:76395570-76395610 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,17.76395570.76395610.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1109AZRC.136286.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1109AZRB.136285.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:100152723-100152763 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1109AZRa.bwamem.mkdup.bam,H1109AZRC.136286.bam.bwamem.mkdup.bam,H1109AZRB.136285.bam.bwamem.mkdup.bam,10.100152723.100152763.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1060LAWA.128258.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1060LAWC.128260.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1060LAWB.128259.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:79478497-79478537 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1060LAWA.128258.bam.bwamem.mkdup.bam,C1060LAWC.128260.bam.bwamem.mkdup.bam,C1060LAWB.128259.bam.bwamem.mkdup.bam,17.79478497.79478537.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH84.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:1779137-1779177 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH84.merge.merged.mkdup.bam,CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,16.1779137.1779177.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1242OIBa.40274.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBC.136303.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBB.136302.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:72518887-72518927 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1242OIBa.40274.bam.bwamem.mkdup.bam,H1242OIBC.136303.bam.bwamem.mkdup.bam,H1242OIBB.136302.bam.bwamem.mkdup.bam,17.72518887.72518927.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1242OIBa.40274.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBC.136303.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBB.136302.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:119174680-119174720 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,4.119174680.119174720.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1242OIBa.40274.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBC.136303.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1242OIBB.136302.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMC.136190.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1137BNMB.136189.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:117774775-117774815 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1137BNMa.bwamem.mkdup.bam,C1137BNMC.136190.bam.bwamem.mkdup.bam,C1137BNMB.136189.bam.bwamem.mkdup.bam,11.117774775.117774815.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-518.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-516.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH517.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:120474809-120474849 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-518.bwamem.mkdup.bam,CDH-1-516.bwamem.mkdup.bam,CDH517.bwamem.mkdup.bam,4.120474809.120474849.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:72215754-72215794 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,4.72215754.72215794.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:107456852-107456892 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1038MWLa.bwamem.mkdup.bam,M1038MWLC.136355.bam.bwamem.mkdup.bam,M1038MWLB.136354.bam.bwamem.mkdup.bam,9.107456852.107456892.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAC.136259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAB.136258.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:66475734-66475774 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1015MOAa.bwamem.mkdup.bam,H1015MOAC.136259.bam.bwamem.mkdup.bam,H1015MOAB.136258.bam.bwamem.mkdup.bam,11.66475734.66475774.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH424_CAGATC_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH408_GCCAAT_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH407_ACAGTG_BC41TKACXX_L004_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAC.136259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1015MOAB.136258.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1100KENC.136181.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1100KENB.136180.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:81539579-81539619 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1100KENa.bwamem.mkdup.bam,C1100KENC.136181.bam.bwamem.mkdup.bam,C1100KENB.136180.bam.bwamem.mkdup.bam,3.81539579.81539619.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-518.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-516.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH517.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:234200771-234200811 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-518.bwamem.mkdup.bam,CDH-1-516.bwamem.mkdup.bam,CDH517.bwamem.mkdup.bam,2.234200771.234200811.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:140799286-140799326 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,5.140799286.140799326.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEA.129671.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEC.128167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1027OWEB.128166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:46299143-46299183 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1027OWEA.129671.bam.bwamem.mkdup.bam,C1027OWEC.128167.bam.bwamem.mkdup.bam,C1027OWEB.128166.bam.bwamem.mkdup.bam,19.46299143.46299183.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr20:4680308-4680348 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,20.4680308.4680348.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:111995719-111995759 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,6.111995719.111995759.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:71419516-71419556 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,16.71419516.71419556.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:4944413-4944453 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,19.4944413.4944453.png 
+
+goto chr22:22869355-22869395 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,22.22869355.22869395.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-4-017.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17F.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17M.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr10:90986631-90986671 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-4-017.bwamem.mkdup.bam,CDH4-17F.bwamem.mkdup.bam,CDH4-17M.bwamem.mkdup.bam,10.90986631.90986671.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-4-017.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17F.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17M.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:147781937-147781977 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1228KKFa.bwamem.mkdup.bam,C1228KKFC.136225.bam.bwamem.mkdup.bam,C1228KKFB.136224.bam.bwamem.mkdup.bam,5.147781937.147781977.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-4-017.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17F.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-17M.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:126389932-126389972 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,4.126389932.126389972.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:21024856-21024896 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,1.21024856.21024896.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALA.128252.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALC.129675.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALB.129674.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:19873231-19873271 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1078GALA.128252.bam.bwamem.mkdup.bam,C1078GALC.129675.bam.bwamem.mkdup.bam,C1078GALB.129674.bam.bwamem.mkdup.bam,16.19873231.19873271.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:2683180-2683220 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,11.2683180.2683220.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:16208325-16208365 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1086GARa.40208.bam.bwamem.mkdup.bam,C1086GARC.136173.bam.bwamem.mkdup.bam,C1086GARB.136172.bam.bwamem.mkdup.bam,11.16208325.16208365.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/m1006KAEa.40284.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEC.136341.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEB.136340.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:140228348-140228388 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1006KAEa.40284.bam.bwamem.mkdup.bam,M1006KAEC.136341.bam.bwamem.mkdup.bam,M1006KAEB.136340.bam.bwamem.mkdup.bam,5.140228348.140228388.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1104KOUA.128177.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1104KOUC.128179.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1104KOUB.128178.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:2906633-2906673 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1104KOUA.128177.bam.bwamem.mkdup.bam,C1104KOUC.128179.bam.bwamem.mkdup.bam,C1104KOUB.128178.bam.bwamem.mkdup.bam,4.2906633.2906673.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1298ELEA.129678.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1298ELEC.129680.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1298ELEB.129679.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:66081839-66081879 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1298ELEA.129678.bam.bwamem.mkdup.bam,H1298ELEC.129680.bam.bwamem.mkdup.bam,H1298ELEB.129679.bam.bwamem.mkdup.bam,1.66081839.66081879.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH84.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:186329895-186329935 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH84.merge.merged.mkdup.bam,CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,1.186329895.186329935.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:187628308-187628348 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,4.187628308.187628348.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-4-022.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-22F.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH4-22M.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:152049400-152049440 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-4-022.bwamem.mkdup.bam,CDH4-22F.bwamem.mkdup.bam,CDH4-22M.bwamem.mkdup.bam,4.152049400.152049440.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:95537457-95537497 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,2.95537457.95537497.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-513.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH366_all.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH367_all.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:74708157-74708197 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-513.bwamem.mkdup.bam,CDH366_all.bwamem.mkdup.bam,CDH367_all.bwamem.mkdup.bam,2.74708157.74708197.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMA.128198.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMC.128200.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMB.128199.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:65495768-65495808 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1339JQMA.128198.bam.bwamem.mkdup.bam,C1339JQMC.128200.bam.bwamem.mkdup.bam,C1339JQMB.128199.bam.bwamem.mkdup.bam,15.65495768.65495808.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1188zfla.40229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1188ZFLC.136217.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1188ZFLB.136216.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr13:33629225-33629265 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1188zfla.40229.bam.bwamem.mkdup.bam,C1188ZFLC.136217.bam.bwamem.mkdup.bam,C1188ZFLB.136216.bam.bwamem.mkdup.bam,13.33629225.33629265.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:887172-887212 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,4.887172.887212.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1227SLGA.128189.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1227SLGC.128191.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1227SLGB.128190.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:146350963-146351003 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1227SLGA.128189.bam.bwamem.mkdup.bam,C1227SLGC.128191.bam.bwamem.mkdup.bam,C1227SLGB.128190.bam.bwamem.mkdup.bam,6.146350963.146351003.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1262KIZa.49473.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1262KIZC.136317.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1262KIZB.136316.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:4936361-4936401 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1262KIZa.49473.bam.bwamem.mkdup.bam,H1262KIZC.136317.bam.bwamem.mkdup.bam,H1262KIZB.136316.bam.bwamem.mkdup.bam,17.4936361.4936401.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1237LPLa.40295.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1237LPLC.136301.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1237LPLB.136300.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:133219279-133219319 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1237LPLa.40295.bam.bwamem.mkdup.bam,H1237LPLC.136301.bam.bwamem.mkdup.bam,H1237LPLB.136300.bam.bwamem.mkdup.bam,12.133219279.133219319.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1088SIDa.40210.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1088SIDC.136177.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1088SIDB.136176.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:152279618-152279658 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1088SIDa.40210.bam.bwamem.mkdup.bam,C1088SIDC.136177.bam.bwamem.mkdup.bam,C1088SIDB.136176.bam.bwamem.mkdup.bam,1.152279618.152279658.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1088SIDa.40210.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1088SIDC.136177.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1088SIDB.136176.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDC.136211.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDB.136210.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:265206-265246 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1180ncda.bwamem.mkdup.bam,C1180NCDC.136211.bam.bwamem.mkdup.bam,C1180NCDB.136210.bam.bwamem.mkdup.bam,4.265206.265246.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1188zfla.40229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1188ZFLC.136217.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1188ZFLB.136216.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:113758214-113758254 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1188zfla.40229.bam.bwamem.mkdup.bam,C1188ZFLC.136217.bam.bwamem.mkdup.bam,C1188ZFLB.136216.bam.bwamem.mkdup.bam,12.113758214.113758254.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBA.136328.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBC.136330.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBB.136329.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:132168915-132168955 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H8041CIBA.136328.bam.bwamem.mkdup.bam,H8041CIBC.136330.bam.bwamem.mkdup.bam,H8041CIBB.136329.bam.bwamem.mkdup.bam,6.132168915.132168955.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBA.136328.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBC.136330.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBB.136329.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:78481863-78481903 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,1.78481863.78481903.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1034BSIa.40256.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1034BISC.136270.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1034BISB.136269.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr20:39797432-39797472 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1034BSIa.40256.bam.bwamem.mkdup.bam,H1034BISC.136270.bam.bwamem.mkdup.bam,H1034BISB.136269.bam.bwamem.mkdup.bam,20.39797432.39797472.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBA.128231.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBC.128233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBB.128232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:885937-885977 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1234TSBA.128231.bam.bwamem.mkdup.bam,H1234TSBC.128233.bam.bwamem.mkdup.bam,H1234TSBB.128232.bam.bwamem.mkdup.bam,19.885937.885977.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBA.128231.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBC.128233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1234TSBB.128232.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEC.136237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEB.136236.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:25633188-25633228 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1336HMEa.bwamem.mkdup.bam,C1336HMEC.136237.bam.bwamem.mkdup.bam,C1336HMEB.136236.bam.bwamem.mkdup.bam,1.25633188.25633228.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:99023086-99023126 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,7.99023086.99023126.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr20:37647503-37647543 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,20.37647503.37647543.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBA.128234.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBC.128236.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBB.128235.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:41562604-41562644 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1264AEBA.128234.bam.bwamem.mkdup.bam,H1264AEBC.128236.bam.bwamem.mkdup.bam,H1264AEBB.128235.bam.bwamem.mkdup.bam,6.41562604.41562644.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBA.128234.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBC.128236.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBB.128235.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:127952957-127952997 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,2.127952957.127952997.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH84.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:123994051-123994091 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH84.merge.merged.mkdup.bam,CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,11.123994051.123994091.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/m1006KAEa.40284.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEC.136341.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEB.136340.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:89173339-89173379 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1006KAEa.40284.bam.bwamem.mkdup.bam,M1006KAEC.136341.bam.bwamem.mkdup.bam,M1006KAEB.136340.bam.bwamem.mkdup.bam,15.89173339.89173379.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH620.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH675.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH619.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:161039327-161039367 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH620.bwamem.mkdup.bam,CDH675.bwamem.mkdup.bam,CDH619.bwamem.mkdup.bam,1.161039327.161039367.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr22:50658425-50658465 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,22.50658425.50658465.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:85143842-85143882 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,16.85143842.85143882.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1251yoxa.40277.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1251YOXC.136311.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1251YOXB.136310.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr6:119243201-119243241 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1251yoxa.40277.bam.bwamem.mkdup.bam,H1251YOXC.136311.bam.bwamem.mkdup.bam,H1251YOXB.136310.bam.bwamem.mkdup.bam,6.119243201.119243241.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMA.136331.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMC.136333.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMB.136332.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:54968476-54968516 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H8045TIMA.136331.bam.bwamem.mkdup.bam,H8045TIMC.136333.bam.bwamem.mkdup.bam,H8045TIMB.136332.bam.bwamem.mkdup.bam,5.54968476.54968516.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMA.136331.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMC.136333.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8045TIMB.136332.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLC.136355.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1038MWLB.136354.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:56309863-56309903 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1038MWLa.bwamem.mkdup.bam,M1038MWLC.136355.bam.bwamem.mkdup.bam,M1038MWLB.136354.bam.bwamem.mkdup.bam,11.56309863.56309903.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:72849938-72849978 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,7.72849938.72849978.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/m1006KAEa.40284.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEC.136341.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEB.136340.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:89854803-89854843 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1006KAEa.40284.bam.bwamem.mkdup.bam,M1006KAEC.136341.bam.bwamem.mkdup.bam,M1006KAEB.136340.bam.bwamem.mkdup.bam,7.89854803.89854843.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:12412671-12412711 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,7.12412671.12412711.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:175520873-175520913 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,3.175520873.175520913.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1258FBBa.40278.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1258FBBC.136313.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1258FBBB.136312.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:161017990-161018030 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1258FBBa.40278.bam.bwamem.mkdup.bam,H1258FBBC.136313.bam.bwamem.mkdup.bam,H1258FBBB.136312.bam.bwamem.mkdup.bam,1.161017990.161018030.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1069VBUa.40267.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1069UBUC.136280.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1069UBUB.136279.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:119738074-119738114 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1069VBUa.40267.bam.bwamem.mkdup.bam,H1069UBUC.136280.bam.bwamem.mkdup.bam,H1069UBUB.136279.bam.bwamem.mkdup.bam,X.119738074.119738114.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1058VONa.40262.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONC.136276.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONB.136275.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:84101369-84101409 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1058VONa.40262.bam.bwamem.mkdup.bam,H1058VONC.136276.bam.bwamem.mkdup.bam,H1058VONB.136275.bam.bwamem.mkdup.bam,16.84101369.84101409.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1251yoxa.40277.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1251YOXC.136311.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1251YOXB.136310.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:135458489-135458529 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1251yoxa.40277.bam.bwamem.mkdup.bam,H1251YOXC.136311.bam.bwamem.mkdup.bam,H1251YOXB.136310.bam.bwamem.mkdup.bam,9.135458489.135458529.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELA.128168.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELC.129672.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELB.128169.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:50737453-50737493 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1044WELA.128168.bam.bwamem.mkdup.bam,C1044WELC.129672.bam.bwamem.mkdup.bam,C1044WELB.128169.bam.bwamem.mkdup.bam,7.50737453.50737493.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:143999134-143999174 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,8.143999134.143999174.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:113662379-113662419 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,8.113662379.113662419.png 
+
+goto chr8:91063907-91063947 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,8.91063907.91063947.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXA.128186.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXC.128188.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXB.128187.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:172166167-172166207 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1205NAXA.128186.bam.bwamem.mkdup.bam,C1205NAXC.128188.bam.bwamem.mkdup.bam,C1205NAXB.128187.bam.bwamem.mkdup.bam,3.172166167.172166207.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXA.128186.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXC.128188.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1205NAXB.128187.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1154TDRC.136203.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:100482750-100482790 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1154TDRa.bwamem.mkdup.bam,C1154TDRC.136203.bam.bwamem.mkdup.bam,c1154TDRb.bwamem.mkdup.bam,12.100482750.100482790.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARA.128216.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARC.128218.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1016PARB.128217.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr14:96180264-96180304 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1016PARA.128216.bam.bwamem.mkdup.bam,H1016PARC.128218.bam.bwamem.mkdup.bam,H1016PARB.128217.bam.bwamem.mkdup.bam,14.96180264.96180304.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:12790262-12790302 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,3.12790262.12790302.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKA.129676.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKC.128185.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1142WCKB.128184.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:65146949-65146989 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1142WCKA.129676.bam.bwamem.mkdup.bam,C1142WCKC.128185.bam.bwamem.mkdup.bam,C1142WCKB.128184.bam.bwamem.mkdup.bam,1.65146949.65146989.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH206_GCCAAT_AC430AACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH204.merge.merged.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH205.merge.merged.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:120352083-120352123 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH206_GCCAAT_AC430AACXX_L003_001.R1.bwamem.mkdup.bam,CDH204.merge.merged.mkdup.bam,CDH205.merge.merged.mkdup.bam,3.120352083.120352123.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:82693393-82693433 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,11.82693393.82693433.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1247VSMa.40276.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1247VSMC.136309.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1247VSMB.136308.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:54109075-54109115 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1247VSMa.40276.bam.bwamem.mkdup.bam,H1247VSMC.136309.bam.bwamem.mkdup.bam,H1247VSMB.136308.bam.bwamem.mkdup.bam,12.54109075.54109115.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOA.128204.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOC.128206.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOB.128205.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:22159749-22159789 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1344RFOA.128204.bam.bwamem.mkdup.bam,C1344RFOC.128206.bam.bwamem.mkdup.bam,C1344RFOB.128205.bam.bwamem.mkdup.bam,1.22159749.22159789.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOA.128204.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOC.128206.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1344RFOB.128205.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWC.136343.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWB.136342.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:73118635-73118675 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1008SAWa.bwamem.mkdup.bam,M1008SAWC.136343.bam.bwamem.mkdup.bam,M1008SAWB.136342.bam.bwamem.mkdup.bam,11.73118635.73118675.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1087AITa.40209.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1087AITC.136175.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1087AITB.136174.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:119373340-119373380 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1087AITa.40209.bam.bwamem.mkdup.bam,C1087AITC.136175.bam.bwamem.mkdup.bam,C1087AITB.136174.bam.bwamem.mkdup.bam,3.119373340.119373380.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-518.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-516.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH517.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:176459-176499 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-518.bwamem.mkdup.bam,CDH-1-516.bwamem.mkdup.bam,CDH517.bwamem.mkdup.bam,12.176459.176499.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-518.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-516.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH517.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1260TATC.136315.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1260TATB.136314.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr19:55738572-55738612 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1260TATa.bwamem.mkdup.bam,H1260TATC.136315.bam.bwamem.mkdup.bam,H1260TATB.136314.bam.bwamem.mkdup.bam,19.55738572.55738612.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:140480476-140480516 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,5.140480476.140480516.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:3432516-3432556 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,8.3432516.3432556.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:122247660-122247700 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,12.122247660.122247700.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFC.136225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1228KKFB.136224.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:53450389-53450429 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1228KKFa.bwamem.mkdup.bam,C1228KKFC.136225.bam.bwamem.mkdup.bam,C1228KKFB.136224.bam.bwamem.mkdup.bam,5.53450389.53450429.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr14:57858026-57858066 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1014HOSA.128213.bam.bwamem.mkdup.bam,H1014HOSC.128215.bam.bwamem.mkdup.bam,H1014HOSB.128214.bam.bwamem.mkdup.bam,14.57858026.57858066.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1154TDRC.136203.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:21367945-21367985 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1154TDRa.bwamem.mkdup.bam,C1154TDRC.136203.bam.bwamem.mkdup.bam,c1154TDRb.bwamem.mkdup.bam,9.21367945.21367985.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSA.128213.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSC.128215.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1014HOSB.128214.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1154TDRC.136203.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1141PCOC.136195.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1141PCOB.136194.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:150839063-150839103 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1141PCOa.bwamem.mkdup.bam,C1141PCOC.136195.bam.bwamem.mkdup.bam,C1141PCOB.136194.bam.bwamem.mkdup.bam,7.150839063.150839103.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:263244-263284 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,17.263244.263284.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:6493750-6493790 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,12.6493750.6493790.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH142_CTTGTA_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH141_GGCTAC_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH140_TAGCTT_BC41TKACXX_L002_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:5074039-5074079 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,17.5074039.5074079.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-518.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH-1-516.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH517.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:176458-176498 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH-1-518.bwamem.mkdup.bam,CDH-1-516.bwamem.mkdup.bam,CDH517.bwamem.mkdup.bam,12.176458.176498.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:100081639-100081679 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,X.100081639.100081679.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:49211693-49211733 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1068ANDa.bwamem.mkdup.bam,C1068ANDC.136167.bam.bwamem.mkdup.bam,C1068ANDB.136166.bam.bwamem.mkdup.bam,3.49211693.49211733.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDC.136167.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1068ANDB.136166.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEC.136237.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1336HMEB.136236.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr1:25633186-25633226 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1336HMEa.bwamem.mkdup.bam,C1336HMEC.136237.bam.bwamem.mkdup.bam,C1336HMEB.136236.bam.bwamem.mkdup.bam,1.25633186.25633226.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBA.128234.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBC.128236.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1264AEBB.128235.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr8:52384771-52384811 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1264AEBA.128234.bam.bwamem.mkdup.bam,H1264AEBC.128236.bam.bwamem.mkdup.bam,H1264AEBB.128235.bam.bwamem.mkdup.bam,8.52384771.52384811.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALA.128252.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALC.129675.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1078GALB.129674.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr9:35561906-35561946 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1078GALA.128252.bam.bwamem.mkdup.bam,C1078GALC.129675.bam.bwamem.mkdup.bam,C1078GALB.129674.bam.bwamem.mkdup.bam,9.35561906.35561946.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH596_AAACAT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH625_CAAAAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch3/CDH594_CTTGTA_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:170043298-170043338 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH596_AAACAT_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,CDH625_CAAAAG_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,CDH594_CTTGTA_BC41TKACXX_L005_001.R1.bwamem.mkdup.bam,4.170043298.170043338.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1247VSMa.40276.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1247VSMC.136309.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1247VSMB.136308.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:100084592-100084632 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1247VSMa.40276.bam.bwamem.mkdup.bam,H1247VSMC.136309.bam.bwamem.mkdup.bam,H1247VSMB.136308.bam.bwamem.mkdup.bam,7.100084592.100084632.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1094WELa.49487.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1094WELC.136179.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1094WELB.136178.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr11:120979986-120980026 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1094WELa.49487.bam.bwamem.mkdup.bam,C1094WELC.136179.bam.bwamem.mkdup.bam,C1094WELB.136178.bam.bwamem.mkdup.bam,11.120979986.120980026.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMA.128198.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMC.128200.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1339JQMB.128199.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:43814920-43814960 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1339JQMA.128198.bam.bwamem.mkdup.bam,C1339JQMC.128200.bam.bwamem.mkdup.bam,C1339JQMB.128199.bam.bwamem.mkdup.bam,15.43814920.43814960.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:35780843-35780883 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1137LEEa.49477.bam.bwamem.mkdup.bam,H1137LEEC.136290.bam.bwamem.mkdup.bam,H1137LEEB.136289.bam.bwamem.mkdup.bam,3.35780843.35780883.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1137LEEa.49477.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEC.136290.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1137LEEB.136289.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWC.136343.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1008SAWB.136342.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:26224550-26224590 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1008SAWa.bwamem.mkdup.bam,M1008SAWC.136343.bam.bwamem.mkdup.bam,M1008SAWB.136342.bam.bwamem.mkdup.bam,7.26224550.26224590.png 
+
+new
+genome hg19
+load  /home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,/home/local/ARCS/yshen/data/CDH/CUMC_archived/Exome/BAM_batch2/CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:141607802-141607842 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,2.141607802.141607842.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHA.128225.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHC.128227.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1112TLHB.128226.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr7:65445215-65445255 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1112TLHA.128225.bam.bwamem.mkdup.bam,H1112TLHC.128227.bam.bwamem.mkdup.bam,H1112TLHB.128226.bam.bwamem.mkdup.bam,7.65445215.65445255.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCA.128207.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCC.128209.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCB.128208.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr17:76046918-76046958 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1345GPCA.128207.bam.bwamem.mkdup.bam,C1345GPCC.128209.bam.bwamem.mkdup.bam,C1345GPCB.128208.bam.bwamem.mkdup.bam,17.76046918.76046958.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCA.128207.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCC.128209.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1345GPCB.128208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1021LEMC.136351.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1021LEMB.136350.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:42145570-42145610 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1021LEMa.bwamem.mkdup.bam,M1021LEMC.136351.bam.bwamem.mkdup.bam,M1021LEMB.136350.bam.bwamem.mkdup.bam,4.42145570.42145610.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1058VONa.40262.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONC.136276.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONB.136275.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:204066290-204066330 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1058VONa.40262.bam.bwamem.mkdup.bam,H1058VONC.136276.bam.bwamem.mkdup.bam,H1058VONB.136275.bam.bwamem.mkdup.bam,2.204066290.204066330.png 
+
+goto chr5:110448766-110448806 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1058VONa.40262.bam.bwamem.mkdup.bam,H1058VONC.136276.bam.bwamem.mkdup.bam,H1058VONB.136275.bam.bwamem.mkdup.bam,5.110448766.110448806.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/h1058VONa.40262.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONC.136276.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1058VONB.136275.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAC.138259.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1009CLAB.138257.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:175184950-175184990 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot h1009CLAa.bwamem.mkdup.bam,H1009CLAC.138259.bam.bwamem.mkdup.bam,H1009CLAB.138257.bam.bwamem.mkdup.bam,3.175184950.175184990.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:27361139-27361179 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1071_PENa.48406.bam.bwamem.mkdup.bam,C1071PENC.128251.bam.bwamem.mkdup.bam,C1071PENB.128250.bam.bwamem.mkdup.bam,2.27361139.27361179.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1071_PENa.48406.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENC.128251.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1071PENB.128250.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1149EYKC.136197.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1149EYKB.136196.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr12:125397117-125397157 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1149EYKa.bwamem.mkdup.bam,C1149EYKC.136197.bam.bwamem.mkdup.bam,C1149EYKB.136196.bam.bwamem.mkdup.bam,12.125397117.125397157.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/m1006KAEa.40284.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEC.136341.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/M1006KAEB.136340.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr15:22969195-22969235 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot m1006KAEa.40284.bam.bwamem.mkdup.bam,M1006KAEC.136341.bam.bwamem.mkdup.bam,M1006KAEB.136340.bam.bwamem.mkdup.bam,15.22969195.22969235.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1249ONJa.49481.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJC.136229.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1249ONJB.136228.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr2:120776724-120776764 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1249ONJa.49481.bam.bwamem.mkdup.bam,C1249ONJC.136229.bam.bwamem.mkdup.bam,C1249ONJB.136228.bam.bwamem.mkdup.bam,2.120776724.120776764.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1252OSLa.49480.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLC.136233.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1252OSLB.136232.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chrX:117526904-117526944 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1252OSLa.49480.bam.bwamem.mkdup.bam,C1252OSLC.136233.bam.bwamem.mkdup.bam,C1252OSLB.136232.bam.bwamem.mkdup.bam,X.117526904.117526944.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1139OIRA.136191.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1139OIRC.136193.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1139OIRB.136192.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr16:70557309-70557349 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1139OIRA.136191.bam.bwamem.mkdup.bam,C1139OIRC.136193.bam.bwamem.mkdup.bam,C1139OIRB.136192.bam.bwamem.mkdup.bam,16.70557309.70557349.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBA.136328.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBC.136330.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H8041CIBB.136329.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr21:44483094-44483134 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H8041CIBA.136328.bam.bwamem.mkdup.bam,H8041CIBC.136330.bam.bwamem.mkdup.bam,H8041CIBB.136329.bam.bwamem.mkdup.bam,21.44483094.44483134.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELA.128168.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELC.129672.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1044WELB.128169.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:71015111-71015151 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot C1044WELA.128168.bam.bwamem.mkdup.bam,C1044WELC.129672.bam.bwamem.mkdup.bam,C1044WELB.128169.bam.bwamem.mkdup.bam,5.71015111.71015151.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr5:115168306-115168346 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1086GARa.40208.bam.bwamem.mkdup.bam,C1086GARC.136173.bam.bwamem.mkdup.bam,C1086GARB.136172.bam.bwamem.mkdup.bam,5.115168306.115168346.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/c1086GARa.40208.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARC.136173.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1086GARB.136172.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDC.136211.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/C1180NCDB.136210.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr4:265207-265247 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot c1180ncda.bwamem.mkdup.bam,C1180NCDC.136211.bam.bwamem.mkdup.bam,C1180NCDB.136210.bam.bwamem.mkdup.bam,4.265207.265247.png 
+
+new
+genome hg19
+load  /home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWA.128228.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWC.128230.bam.bwamem.mkdup.bam,/home/local/ARCS/hq2130/WES/CDH/MGH_bam/H1142KPWB.128229.bam.bwamem.mkdup.bam
+snapshotDirectory /home/local/ARCS/hq2130/Exome_Seq/scripts/IGV/CDH_IGV2.IGV_plots/ 
+goto chr3:194080450-194080490 
+sort base 
+squish 
+maxPanelHeight 300 
+snapshot H1142KPWA.128228.bam.bwamem.mkdup.bam,H1142KPWC.128230.bam.bwamem.mkdup.bam,H1142KPWB.128229.bam.bwamem.mkdup.bam,3.194080450.194080490.png 
+
+exit 

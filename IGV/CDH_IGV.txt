@@ -25,7 +25,6 @@
 4	152049420	CDH-4-022.bwamem.mkdup.bam,CDH4-22F.bwamem.mkdup.bam,CDH4-22M.bwamem.mkdup.bam	
 2	74708177	CDH-1-513.bwamem.mkdup.bam,CDH366_all.bwamem.mkdup.bam,CDH367_all.bwamem.mkdup.bam	
 4	887192	CDH207_AAACAT_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH212_GAAACC_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam,CDH211_CAAAAG_BC41TKACXX_L003_001.R1.bwamem.mkdup.bam	
-1	25633208	c1336HMEa.bwamem.mkdup.bam,C1336HMEC.136237.bam.bwamem.mkdup.bam,C1336HMEB.136236.bam.bwamem.mkdup.bam	
 7	99023106	CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam	
 11	123994071	CDH84.merge.merged.mkdup.bam,CDH93_TTAGGC_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam,CDH92_CGATGT_BC41TKACXX_L001_001.R1.bwamem.mkdup.bam	
 8	143999154	CDH889_GAAACC_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH890_AAAGCA_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam,CDH891_ATCACG_BC41TKACXX_L006_001.R1.bwamem.mkdup.bam	

@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.6.2/css/reveal.css">
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.6.2/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,15 +24,38 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.jsdelivr.net/reveal.js/2.6.2/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="http://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
+
+<!-- Loading the mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
 
 <!-- Get Font-awesome from cdn -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
@@ -83,8 +106,10 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
 .highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
 .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
 .highlight .gd { color: #A00000 } /* Generic.Deleted */
@@ -145,11 +170,9 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-html {
-  overflow-y: auto;
-}
 .reveal {
   font-size: 160%;
+  overflow-y: scroll;
 }
 .reveal pre {
   width: inherit;
@@ -202,6 +225,14 @@ div.output_prompt {
   /* 5px right shift to account for margin in parent container */
   margin: 5px 5px 0 0;
 }
+div.text_cell.rendered .rendered_html {
+  /* The H1 height seems miscalculated, we are just hidding the scrollbar */
+  overflow-y: hidden;
+}
+a.anchor-link {
+  /* There is still an anchor, we are only hidding it */
+  display: none;
+}
 .rendered_html p {
   text-align: inherit;
 }
@@ -212,12 +243,34 @@ div.output_prompt {
 
 </head>
 
+
+<style>
+#div.prompt {display:none}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+//div.output_wrapper {
+//  margin-top: 0px;
+//}
+.input_hidden {
+  display: none;
+//  margin-top: 5px;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $(".output_wrapper").click(function(){
+      $(this).prev('.input_hidden').slideToggle();
+  });
+})
+</script>
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
-    <section>
-    
+<section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -226,8 +279,7 @@ div.output_prompt {
 <h1 id="A-IPython-notebook">A IPython notebook<a class="anchor-link" href="#A-IPython-notebook">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="1">
-    
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -258,11 +310,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -281,10 +329,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -293,33 +338,7 @@ div.output_prompt {
 <h2 id="Or-see-that-web-page-embedded-right-here-in-the-notebook:">Or see that web page embedded right here in the notebook:<a class="anchor-link" href="#Or-see-that-web-page-embedded-right-here-in-the-notebook:">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">&lt;</span><span class="n">iframe</span> <span class="n">src</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ipython</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">notebook</span><span class="o">.</span><span class="n">html</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><iframe src=http://ipython.org/notebook.html width=1000 height=400></iframe></p>
-
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -343,10 +362,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -367,36 +383,42 @@ div.output_prompt {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c">#this is a terrible and awesome way to do this:</span>
-<span class="n">factorial</span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">reduce</span><span class="p">(</span><span class="nb">int</span><span class="o">.</span><span class="n">__mul__</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span class="c1">#this is a terrible and awesome way to do this:</span>
+<span class="n">factorial</span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="nb">reduce</span><span class="p">(</span><span class="nb">int</span><span class="o">.</span><span class="n">__mul__</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
 </div>
 </div>
+</div>
+
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="nb">map</span><span class="p">(</span><span class="n">factorial</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span class="nb">map</span><span class="p">(</span><span class="n">factorial</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span>
 </pre></div>
 
 </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -408,10 +430,7 @@ div.output_prompt {
 </div>
 </div>
 
-</div></section>
-    </section><section>
-    <section>
-    
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -432,16 +451,19 @@ div.output_prompt {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">random</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">random</span>
 <span class="o">%</span><span class="k">timeit</span> a = [random.random() for x in range(1000)]
 </pre></div>
 
 </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -450,7 +472,7 @@ div.output_prompt {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>10000 loops, best of 3: 178 us per loop
+<pre>10000 loops, best of 3: 135 µs per loop
 </pre>
 </div>
 </div>
@@ -474,8 +496,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="17">
-    
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -485,11 +506,7 @@ div.output_prompt {
 
 </div>
 </div>
-</div>
-    </div></section>
-    </section><section>
-    <section>
-    
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -510,15 +527,66 @@ div.output_prompt {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s">&#39;misc-you-dont-say-l.png&#39;</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;misc-you-dont-say-l.png&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">IOError</span>                                   Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-5-a6ad369a43b2&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      1</span> <span class="ansigreen">from</span> IPython<span class="ansiblue">.</span>display <span class="ansigreen">import</span> display<span class="ansiblue">,</span> Image<span class="ansiblue"></span>
+<span class="ansigreen">----&gt; 2</span><span class="ansired"> </span>display<span class="ansiblue">(</span>Image<span class="ansiblue">(</span>filename<span class="ansiblue">=</span><span class="ansiblue">&apos;misc-you-dont-say-l.png&apos;</span><span class="ansiblue">)</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+
+<span class="ansigreen">/Users/hongjian/anaconda/lib/python2.7/site-packages/IPython/core/display.pyc</span> in <span class="ansicyan">__init__</span><span class="ansiblue">(self, data, url, filename, format, embed, width, height, retina, unconfined, metadata)</span>
+<span class="ansigreen">    737</span>         self<span class="ansiblue">.</span>unconfined <span class="ansiblue">=</span> unconfined<span class="ansiblue"></span>
+<span class="ansigreen">    738</span>         self<span class="ansiblue">.</span>metadata <span class="ansiblue">=</span> metadata<span class="ansiblue"></span>
+<span class="ansigreen">--&gt; 739</span><span class="ansired">         </span>super<span class="ansiblue">(</span>Image<span class="ansiblue">,</span> self<span class="ansiblue">)</span><span class="ansiblue">.</span>__init__<span class="ansiblue">(</span>data<span class="ansiblue">=</span>data<span class="ansiblue">,</span> url<span class="ansiblue">=</span>url<span class="ansiblue">,</span> filename<span class="ansiblue">=</span>filename<span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    740</span> <span class="ansiblue"></span>
+<span class="ansigreen">    741</span>         <span class="ansigreen">if</span> retina<span class="ansiblue">:</span><span class="ansiblue"></span>
+
+<span class="ansigreen">/Users/hongjian/anaconda/lib/python2.7/site-packages/IPython/core/display.pyc</span> in <span class="ansicyan">__init__</span><span class="ansiblue">(self, data, url, filename)</span>
+<span class="ansigreen">    384</span>         self<span class="ansiblue">.</span>filename <span class="ansiblue">=</span> None <span class="ansigreen">if</span> filename <span class="ansigreen">is</span> None <span class="ansigreen">else</span> unicode_type<span class="ansiblue">(</span>filename<span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    385</span> <span class="ansiblue"></span>
+<span class="ansigreen">--&gt; 386</span><span class="ansired">         </span>self<span class="ansiblue">.</span>reload<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    387</span>         self<span class="ansiblue">.</span>_check_data<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    388</span> <span class="ansiblue"></span>
+
+<span class="ansigreen">/Users/hongjian/anaconda/lib/python2.7/site-packages/IPython/core/display.pyc</span> in <span class="ansicyan">reload</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    759</span>         <span class="ansiblue">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span><span class="ansiblue"></span>
+<span class="ansigreen">    760</span>         <span class="ansigreen">if</span> self<span class="ansiblue">.</span>embed<span class="ansiblue">:</span><span class="ansiblue"></span>
+<span class="ansigreen">--&gt; 761</span><span class="ansired">             </span>super<span class="ansiblue">(</span>Image<span class="ansiblue">,</span>self<span class="ansiblue">)</span><span class="ansiblue">.</span>reload<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    762</span>             <span class="ansigreen">if</span> self<span class="ansiblue">.</span>retina<span class="ansiblue">:</span><span class="ansiblue"></span>
+<span class="ansigreen">    763</span>                 self<span class="ansiblue">.</span>_retina_shape<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+
+<span class="ansigreen">/Users/hongjian/anaconda/lib/python2.7/site-packages/IPython/core/display.pyc</span> in <span class="ansicyan">reload</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    402</span>         <span class="ansiblue">&quot;&quot;&quot;Reload the raw data from file or URL.&quot;&quot;&quot;</span><span class="ansiblue"></span>
+<span class="ansigreen">    403</span>         <span class="ansigreen">if</span> self<span class="ansiblue">.</span>filename <span class="ansigreen">is</span> <span class="ansigreen">not</span> None<span class="ansiblue">:</span><span class="ansiblue"></span>
+<span class="ansigreen">--&gt; 404</span><span class="ansired">             </span><span class="ansigreen">with</span> open<span class="ansiblue">(</span>self<span class="ansiblue">.</span>filename<span class="ansiblue">,</span> self<span class="ansiblue">.</span>_read_flags<span class="ansiblue">)</span> <span class="ansigreen">as</span> f<span class="ansiblue">:</span><span class="ansiblue"></span>
+<span class="ansigreen">    405</span>                 self<span class="ansiblue">.</span>data <span class="ansiblue">=</span> f<span class="ansiblue">.</span>read<span class="ansiblue">(</span><span class="ansiblue">)</span><span class="ansiblue"></span>
+<span class="ansigreen">    406</span>         <span class="ansigreen">elif</span> self<span class="ansiblue">.</span>url <span class="ansigreen">is</span> <span class="ansigreen">not</span> None<span class="ansiblue">:</span><span class="ansiblue"></span>
+
+<span class="ansired">IOError</span>: [Errno 2] No such file or directory: u&apos;misc-you-dont-say-l.png&apos;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -534,15 +602,18 @@ div.output_prompt {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;http://cdn.alltheragefaces.com/img/faces/large/misc-you-dont-say-l.png&quot;</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="o">/&gt;</span>
+<div class=" highlight hl-ipython2"><pre><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://cdn.alltheragefaces.com/img/faces/large/misc-you-dont-say-l.png&quot;</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="o">/&gt;</span>
 </pre></div>
 
 </div>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -555,62 +626,61 @@ div.output_prompt {
 
 </div>
 </div>
-</div></section>
-    </section>
+</div></section></section>
 </div>
 </div>
 
-<script src="http://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/head.min.js"></script>
-
-<script src="http://cdn.jsdelivr.net/reveal.js/2.6.2/js/reveal.js"></script>
-
 <script>
 
-// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
+require(
+    {
+      // it makes sense to wait a little bit when you are loading
+      // reveal from a cdn in a slow connection environment
+      waitSeconds: 15
+    },
+    [
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
+    ],
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+    function(head, Reveal){
 
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: "http://cdn.jsdelivr.net/reveal.js/2.6.2/lib/js/classList.js", condition: function() { return !document.body.classList; } },
-{ src: "http://cdn.jsdelivr.net/reveal.js/2.6.2/plugin/notes/notes.js", async: true, condition: function() { return !!document.body.classList; } }
-]
-});
-</script>
+        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
 
-<!-- Loading mathjax macro -->
-<!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration -->
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
-<script>
-Reveal.addEventListener( 'slidechanged', function( event ) {
-  window.scrollTo(0,0);
-  MathJax.Hub.Rerender(event.currentSlide);
-});
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: "reveal.js/lib/js/classList.js",
+                  condition: function() { return !document.body.classList; } },
+                { src: "reveal.js/plugin/notes/notes.js",
+                  async: true,
+                  condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+        var update = function(event){
+          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
+            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
+          }
+        };
+
+        Reveal.addEventListener('slidechanged', update);
+
+        var update_scroll = function(event){
+          $(".reveal").scrollTop(0);
+        };
+
+        Reveal.addEventListener('slidechanged', update_scroll);
+
+    }
+);
+
 </script>
 
 </body>

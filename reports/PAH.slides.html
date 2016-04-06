@@ -1,10 +1,64 @@
+
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" />
-<title>Untitled</title>
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<title>PAH slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<!-- General and theme style sheets -->
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+
+</script>
+
+<!--[if lt IE 9]>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Loading the mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
+
+<!-- Get Font-awesome from cdn -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -116,61 +170,109 @@
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-body {
-  overflow: visible;
-  padding: 8px;
+.reveal {
+  font-size: 160%;
+  overflow-y: scroll;
 }
-
-div#notebook {
-  overflow: visible;
-  border-top: none;
+.reveal pre {
+  width: inherit;
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace, sans-serif;
+  font-size: 80%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
-
-@media print {
-  div.cell {
-    display: block;
-    page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
-  }
-  div.output { 
-    display: block;
-    page-break-inside: avoid; 
-  }
+.reveal pre code {
+  padding: 0px;
+}
+.reveal section img {
+  border: 0px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+.reveal i {
+  font-style: normal;
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+.reveal .slides {
+  text-align: left;
+}
+.reveal.fade {
+  opacity: 1;
+}
+.reveal .progress {
+  position: static;
+}
+div.input_area {
+  padding: 0.06em;
+}
+div.code_cell {
+  background-color: transparent;
+}
+div.prompt {
+  width: 11ex;
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace, sans-serif;
+  font-size: 80%;
+  text-align: right;
+}
+div.output_area pre {
+  font-family: monospace, sans-serif;
+  font-size: 80%;
+}
+div.output_prompt {
+  /* 5px right shift to account for margin in parent container */
+  margin: 5px 5px 0 0;
+}
+div.text_cell.rendered .rendered_html {
+  /* The H1 height seems miscalculated, we are just hidding the scrollbar */
+  overflow-y: hidden;
+}
+a.anchor-link {
+  /* There is still an anchor, we are only hidding it */
+  display: none;
+}
+.rendered_html p {
+  text-align: inherit;
 }
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
 <link rel="stylesheet" href="custom.css">
 
-<!-- Loading mathjax macro -->
-<!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-    <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true,
-            processEnvironments: true
-        },
-        // Center justify equations in code and markdown cells. Elsewhere
-        // we use CSS to left justify single line equations in code cells.
-        displayAlign: 'center',
-        "HTML-CSS": {
-            styles: {'.MathJax_Display': {"margin": 0}},
-            linebreaks: { automatic: true }
-        }
-    });
-    </script>
-    <!-- End of mathjax configuration --></head>
-<body>
-  <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
+</head>
 
+
+<style>
+div.prompt {display:none}
+</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+//div.output_wrapper {
+//  margin-top: 0px;
+//}
+.input_hidden {
+  display: none;
+//  margin-top: 5px;
+}
+</style>
+<body>
+<div class="reveal">
+<div class="slides">
+<section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><p><p><div class="lev1"><a href="#PAH-burden-analysis-summary">PAH burden analysis summary</a></div></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -187,19 +289,14 @@ div#notebook {
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-
-<span class="c1">#https://github.com/HHammond/PrettyPandas</span>
-<span class="c1">#http://melissagymrek.com/python/2014/01/12/ipython-tables.html</span>
-<span class="c1">#http://nbviewer.jupyter.org/gist/chris1610/f2f4a2e9181f6ec22e88</span>
-<span class="c1">#http://nbviewer.jupyter.org/github/pydata/pandas/blob/master/doc/source/html-styling.ipynb</span>
-    
 </pre></div>
 
 </div>
@@ -207,12 +304,35 @@ div#notebook {
 </div>
 
 </div>
+
+</div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">CSS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython2"><pre><span class="c1">#https://github.com/HHammond/PrettyPandas</span>
+<span class="c1">#http://melissagymrek.com/python/2014/01/12/ipython-tables.html</span>
+<span class="c1">#http://nbviewer.jupyter.org/gist/chris1610/f2f4a2e9181f6ec22e88</span>
+<span class="c1">#http://nbviewer.jupyter.org/github/pydata/pandas/blob/master/doc/source/html-styling.ipynb</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;float_format&#39;</span><span class="p">,</span> <span class="s1">&#39;{:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">CSS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">body {</span>
 <span class="s2">    margin: 0;</span>
 <span class="s2">    font-family: Helvetica;</span>
@@ -249,9 +369,25 @@ div#notebook {
 <span class="s2">}</span>
 <span class="s2">div.output_area pre {</span>
 <span class="s2">font-family: Helvetica;</span>
-<span class="s2">font-size: 250%;</span>
+<span class="s2">font-size: 100%;</span>
 <span class="s2">}</span>
 <span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;{}&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CSS</span><span class="p">))</span>
 </pre></div>
 
@@ -259,11 +395,13 @@ div#notebook {
 </div>
 </div>
 
+</div>
+
 <div class="output_wrapper">
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[38]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style>
@@ -303,7 +441,7 @@ table.dataframe td {
 }
 div.output_area pre {
 font-family: Helvetica;
-font-size: 250%;
+font-size: 100%;
 }
 </style>
 </div>
@@ -314,23 +452,13 @@ font-size: 250%;
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-<pre><code>**aaaaaaaaaaenrichment in all genes**</code></pre>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="mi">250</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="mi">250</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.001</span><span class="p">,</span><span class="mf">0.00001</span><span class="p">]]),</span> <span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;bbb&#39;</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;lib&#39;</span><span class="p">,</span> <span class="s1">&#39;qty1&#39;</span><span class="p">,</span> <span class="s1">&#39;qty2&#39;</span><span class="p">))</span>
 <span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Hover to highlight.&quot;</span><span class="p">)</span>
@@ -341,6 +469,8 @@ font-size: 250%;
 
 </div>
 </div>
+</div>
+
 </div>
 
 <div class="output_wrapper">
@@ -371,15 +501,15 @@ font-size: 250%;
   <tbody>
     <tr>
       <th>aaa</th>
-      <td>1.0</td>
-      <td>2.000</td>
-      <td>3.000e+00</td>
+      <td>1.00</td>
+      <td>2.00</td>
+      <td>3.00</td>
     </tr>
     <tr>
       <th>bbb</th>
-      <td>0.1</td>
-      <td>0.001</td>
-      <td>1.000e-05</td>
+      <td>0.10</td>
+      <td>0.00</td>
+      <td>0.00</td>
     </tr>
   </tbody>
 </table>
@@ -393,294 +523,12 @@ font-size: 250%;
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">hover</span><span class="p">(</span><span class="n">hover_color</span><span class="o">=</span><span class="s2">&quot;#ffff99&quot;</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="n">selector</span><span class="o">=</span><span class="s2">&quot;tr:hover&quot;</span><span class="p">,</span>
-                <span class="n">props</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;background-color&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">hover_color</span><span class="p">)])</span>
-
-<span class="n">styles</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">hover</span><span class="p">(),</span>
-    <span class="nb">dict</span><span class="p">(</span><span class="n">selector</span><span class="o">=</span><span class="s2">&quot;th&quot;</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;font-size&quot;</span><span class="p">,</span> <span class="s2">&quot;150%&quot;</span><span class="p">),</span>
-                               <span class="p">(</span><span class="s2">&quot;text-align&quot;</span><span class="p">,</span> <span class="s2">&quot;center&quot;</span><span class="p">)]),</span>
-    <span class="nb">dict</span><span class="p">(</span><span class="n">selector</span><span class="o">=</span><span class="s2">&quot;caption&quot;</span><span class="p">,</span> <span class="n">props</span><span class="o">=</span><span class="p">[(</span><span class="s2">&quot;caption-side&quot;</span><span class="p">,</span> <span class="s2">&quot;bottom&quot;</span><span class="p">)])</span>
-<span class="p">]</span>
-<span class="n">html</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_table_styles</span><span class="p">(</span><span class="n">styles</span><span class="p">)</span>
-          <span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Hover to highlight.&quot;</span><span class="p">))</span>
-<span class="n">html</span>
-<span class="c1">#help(df.style)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[59]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-
-        <style  type="text/css" >
-        
-            #T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5 tr:hover {
-            
-                background-color: #ffff99;
-            
-            }
-        
-            #T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5 th {
-            
-                font-size: 150%;
-            
-                text-align: center;
-            
-            }
-        
-            #T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5 caption {
-            
-                caption-side: bottom;
-            
-            }
-        
-        
-        </style>
-
-        <table id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5" None>
-        
-            <caption>Hover to highlight.</caption>
-        
-
-        <thead>
-            
-            <tr>
-                
-                <th class="blank">
-                
-                <th class="col_heading level0 col0">lib
-                
-                <th class="col_heading level0 col1">qty1
-                
-                <th class="col_heading level0 col2">qty2
-                
-            </tr>
-            
-        </thead>
-        <tbody>
-            
-            <tr>
-                
-                <th id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5" class="row_heading level2 row0">
-                    aaa
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row0_col0" class="data row0 col0">
-                    -1.75741
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row0_col1" class="data row0 col1">
-                    1.02974
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row0_col2" class="data row0 col2">
-                    0.737136
-                
-            </tr>
-            
-            <tr>
-                
-                <th id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5" class="row_heading level2 row1">
-                    bbb
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row1_col0" class="data row1 col0">
-                    1.7508
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row1_col1" class="data row1 col1">
-                    -0.13551
-                
-                <td id="T_4ba5a6f5_fbc0_11e5_8856_a8667f036ac5row1_col2" class="data row1 col2">
-                    0.294834
-                
-            </tr>
-            
-        </tbody>
-        </table>
-        
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>lib</th>
-      <th>qty1</th>
-      <th>qty2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>aaa</th>
-      <td>0.429585</td>
-      <td>-0.683696</td>
-      <td>-1.295181</td>
-    </tr>
-    <tr>
-      <th>bbb</th>
-      <td>-0.812233</td>
-      <td>1.854825</td>
-      <td>-0.238074</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">width</span>
-<span class="k">print</span> <span class="s1">&#39;&#39;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>250
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_colwidth</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>100</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-
-<span class="n">data</span> <span class="o">=</span> <span class="p">[[</span>  <span class="mi">66386</span><span class="p">,</span>  <span class="mi">174296</span><span class="p">,</span>   <span class="mi">75131</span><span class="p">,</span>  <span class="mi">577908</span><span class="p">,</span>   <span class="mi">32015</span><span class="p">],</span>
-        <span class="p">[</span>  <span class="mi">58230</span><span class="p">,</span>  <span class="mi">381139</span><span class="p">,</span>   <span class="mi">78045</span><span class="p">,</span>   <span class="mi">99308</span><span class="p">,</span>  <span class="mi">160454</span><span class="p">],</span>
-        <span class="p">[</span>  <span class="mi">89135</span><span class="p">,</span>   <span class="mi">80552</span><span class="p">,</span>  <span class="mi">152558</span><span class="p">,</span>  <span class="mi">497981</span><span class="p">,</span>  <span class="mi">603535</span><span class="p">],</span>
-        <span class="p">[</span>  <span class="mi">78415</span><span class="p">,</span>   <span class="mi">81858</span><span class="p">,</span>  <span class="mi">150656</span><span class="p">,</span>  <span class="mi">193263</span><span class="p">,</span>   <span class="mi">69638</span><span class="p">],</span>
-        <span class="p">[</span> <span class="mi">139361</span><span class="p">,</span>  <span class="mi">331509</span><span class="p">,</span>  <span class="mi">343164</span><span class="p">,</span>  <span class="mi">781380</span><span class="p">,</span>   <span class="mi">52269</span><span class="p">]]</span>
-
-<span class="n">columns</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Freeze&#39;</span><span class="p">,</span> <span class="s1">&#39;Wind&#39;</span><span class="p">,</span> <span class="s1">&#39;Flood&#39;</span><span class="p">,</span> <span class="s1">&#39;Quake&#39;</span><span class="p">,</span> <span class="s1">&#39;Hail&#39;</span><span class="p">)</span>
-<span class="n">rows</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> year&#39;</span> <span class="o">%</span> <span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)]</span>
-
-<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2500</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
-<span class="n">value_increment</span> <span class="o">=</span> <span class="mi">1000</span>
-
-<span class="c1"># Get some pastel shades for the colors</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">BuPu</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">rows</span><span class="p">)))</span>
-<span class="n">n_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-
-<span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">columns</span><span class="p">))</span> <span class="o">+</span> <span class="mf">0.3</span>
-<span class="n">bar_width</span> <span class="o">=</span> <span class="mf">0.4</span>
-
-<span class="c1"># Initialize the vertical-offset for the stacked bar chart.</span>
-<span class="n">y_offset</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">columns</span><span class="p">))</span>
-
-<span class="c1"># Plot bars and create text labels for the table</span>
-<span class="n">cell_text</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_rows</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="n">row</span><span class="p">],</span> <span class="n">bar_width</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="n">y_offset</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">row</span><span class="p">])</span>
-    <span class="n">y_offset</span> <span class="o">=</span> <span class="n">y_offset</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">row</span><span class="p">]</span>
-    <span class="n">cell_text</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="s1">&#39;</span><span class="si">%1.1f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mf">1000.0</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y_offset</span><span class="p">])</span>
-<span class="c1"># Reverse colors and text labels to display the last value at the top.</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">cell_text</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-
-<span class="c1"># Add a table at the bottom of the axes</span>
-<span class="n">the_table</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">cellText</span><span class="o">=</span><span class="n">cell_text</span><span class="p">,</span>
-                      <span class="n">rowLabels</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span>
-                      <span class="n">rowColours</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span>
-                      <span class="n">colLabels</span><span class="o">=</span><span class="n">columns</span><span class="p">,</span>
-                      <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
-
-<span class="c1"># Adjust layout to make room for the table:</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Loss in ${0}&#39;s&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value_increment</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">values</span> <span class="o">*</span> <span class="n">value_increment</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">val</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">values</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Loss by Disaster&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre> 
 </pre></div>
 
 </div>
@@ -688,20 +536,64 @@ font-size: 250%;
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
-</pre></div>
 
-</div>
+</div></section></section>
 </div>
 </div>
 
-</div>
-    </div>
-  </div>
+<script>
+
+require(
+    {
+      // it makes sense to wait a little bit when you are loading
+      // reveal from a cdn in a slow connection environment
+      waitSeconds: 15
+    },
+    [
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
+    ],
+
+    function(head, Reveal){
+
+        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: "reveal.js/lib/js/classList.js",
+                  condition: function() { return !document.body.classList; } },
+                { src: "reveal.js/plugin/notes/notes.js",
+                  async: true,
+                  condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+        var update = function(event){
+          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
+            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
+          }
+        };
+
+        Reveal.addEventListener('slidechanged', update);
+
+        var update_scroll = function(event){
+          $(".reveal").scrollTop(0);
+        };
+
+        Reveal.addEventListener('slidechanged', update_scroll);
+
+    }
+);
+
+</script>
+
 </body>
+
 </html>

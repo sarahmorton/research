@@ -25,12 +25,5 @@ div.prompt {display:none}
 }
 </style>
 
-<script>
-$(document).ready(function(){
-  $(".output_wrapper").click(function(){
-      $(this).prev('.input_hidden').slideToggle();
-  });
-})
-</script>
 {%- endblock header -%}
 

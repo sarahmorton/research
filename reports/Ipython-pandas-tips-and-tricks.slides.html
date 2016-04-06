@@ -315,7 +315,7 @@ div.prompt {display:none}
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -328,6 +328,21 @@ div.prompt {display:none}
 </div>
 </div>
 
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/hongjian/anaconda/lib/python2.7/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
+  warnings.warn(&apos;Matplotlib is building the font cache using fc-list. This may take a moment.&apos;)
+</pre>
+</div>
+</div>
+
+</div>
 </div>
 
 </div>
@@ -541,11 +556,11 @@ table.dataframe td {
 </div>
 </div>
 
-</div></section></section><section><section>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">SALES</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;add_igv.csv&quot;</span><span class="p">)</span>
@@ -562,7 +577,7 @@ table.dataframe td {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[69]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -573,7 +588,21 @@ table.dataframe td {
       <th>CHROM</th>
       <th>POS</th>
       <th>ID</th>
+      <th>REF</th>
+      <th>ALT</th>
+      <th>QUAL</th>
+      <th>FILTER</th>
+      <th>proband ID(GT:AD:DP:GQ:PL)</th>
+      <th>parents</th>
+      <th>1KG.afr.freq</th>
       <th>...</th>
+      <th>SOR</th>
+      <th>SegDup</th>
+      <th>SiPhy</th>
+      <th>VQSLOD</th>
+      <th>VarClass</th>
+      <th>VarFunc</th>
+      <th>culprit</th>
       <th>In repetitive regions</th>
       <th>75bp_mappability</th>
       <th>IGV</th>
@@ -585,9 +614,23 @@ table.dataframe td {
       <td>17</td>
       <td>59545005</td>
       <td>.</td>
+      <td>ACCCCTTTGGC</td>
+      <td>A</td>
+      <td>1848.70</td>
+      <td>PASS</td>
+      <td>JM847(0/1:84,52:136:99:1903,0,9580)</td>
+      <td>JM848(0/0:35,0:35:99:0,99,1485),JM849(0/0:37,0...</td>
+      <td>NaN</td>
       <td>...</td>
+      <td>0.722</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>3.35</td>
+      <td>frameshiftdeletion</td>
+      <td>exonic</td>
+      <td>FS</td>
       <td>No</td>
-      <td>$1.00</td>
+      <td>1.00</td>
       <td>PASS</td>
     </tr>
     <tr>
@@ -595,29 +638,71 @@ table.dataframe td {
       <td>5</td>
       <td>23527684</td>
       <td>.</td>
+      <td>G</td>
+      <td>T</td>
+      <td>1627.01</td>
+      <td>PASS</td>
+      <td>JM1321(0/1:59,62:121:99:1672,0,1659)</td>
+      <td>JM1319(0/0:33,0:33:99:0,99,1292),JM1320(0/0:49...</td>
+      <td>NaN</td>
       <td>...</td>
+      <td>0.717</td>
+      <td>Score:0.927918,Name:chr16:90123418</td>
+      <td>4.067</td>
+      <td>4.44</td>
+      <td>nonsynonymousSNV</td>
+      <td>exonic</td>
+      <td>FS</td>
       <td>No</td>
-      <td>$0.25</td>
+      <td>0.25</td>
       <td>PASS</td>
     </tr>
     <tr>
-      <th>...</th>
+      <th>2</th>
+      <td>13</td>
+      <td>20600785</td>
+      <td>.</td>
+      <td>C</td>
+      <td>T</td>
+      <td>1362.83</td>
+      <td>PASS</td>
+      <td>JM630(0/1:44,45:89:99:1408,0,1350)</td>
+      <td>JM430(0/0:34,0:34:99:0,99,1437),JM431(0/0:34,0...</td>
+      <td>NaN</td>
       <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
+      <td>0.937</td>
+      <td>NaN</td>
+      <td>11.759</td>
+      <td>1.84</td>
+      <td>stopgain</td>
+      <td>exonic</td>
+      <td>ReadPosRankSum</td>
+      <td>No</td>
+      <td>1.00</td>
+      <td>PASS</td>
     </tr>
     <tr>
       <th>3</th>
       <td>15</td>
       <td>41372034</td>
       <td>.</td>
+      <td>G</td>
+      <td>A</td>
+      <td>1147.82</td>
+      <td>PASS</td>
+      <td>JM0013(0/1:82,43:125:99:1193,0,2663)</td>
+      <td>JM576(0/0:33,0:33:99:0,99,1205),JM577(0/0:39,0...</td>
+      <td>NaN</td>
       <td>...</td>
+      <td>0.593</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.28</td>
+      <td>synonymousSNV</td>
+      <td>exonic</td>
+      <td>FS</td>
       <td>No</td>
-      <td>$1.00</td>
+      <td>1.00</td>
       <td>PASS</td>
     </tr>
     <tr>
@@ -625,9 +710,23 @@ table.dataframe td {
       <td>11</td>
       <td>126138600</td>
       <td>.</td>
+      <td>G</td>
+      <td>T</td>
+      <td>2533.71</td>
+      <td>PASS</td>
+      <td>FPPH133-01(0/1:150,98:248:99:2579,0,4352)</td>
+      <td>FPPH133-03(0/0:36,0:36:99:0,99,1485),FPPH133-0...</td>
+      <td>NaN</td>
       <td>...</td>
+      <td>0.836</td>
+      <td>NaN</td>
+      <td>17.832</td>
+      <td>1.15</td>
+      <td>nonsynonymousSNV</td>
+      <td>exonic</td>
+      <td>QD</td>
       <td>No</td>
-      <td>$1.00</td>
+      <td>1.00</td>
       <td>PASS</td>
     </tr>
   </tbody>
@@ -1651,7 +1750,7 @@ table.dataframe td {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">qgrid</span>
@@ -1678,10 +1777,26 @@ table.dataframe td {
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">qgrid</span><span class="o">.</span><span class="n">show_grid</span><span class="p">(</span><span class="n">SALES</span><span class="p">,</span> <span class="n">remote_js</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">grid_options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;forceFitColumns&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s1">&#39;defaultColumnWidth&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
 </pre></div>
 
 </div>

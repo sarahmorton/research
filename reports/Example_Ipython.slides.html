@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Ipython-pandas-tips-and-tricks slides</title>
+<title>Example_Ipython slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -243,22 +243,6 @@ a.anchor-link {
 
 </head>
 
-
-<style>
-div.prompt {display:none}
-</style>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<style type="text/css">
-//div.output_wrapper {
-//  margin-top: 0px;
-//}
-.input_hidden {
-  display: none;
-//  margin-top: 5px;
-}
-</style>
 <body>
 <div class="reveal">
 <div class="slides">
@@ -268,60 +252,75 @@ div.prompt {display:none}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><p><p><div class="lev1"><a href="#Introduction">Introduction</a></div><div class="lev2"><a href="#Import-modules-and-some-sample-data">Import modules and some sample data</a></div><div class="lev2"><a href="#Using-pandas-settings-to-control-output">Using pandas settings to control output</a></div><div class="lev2"><a href="#Third-Party-Plugins">Third Party Plugins</a></div></p>
+<h1 id="A-IPython-notebook">A IPython notebook<a class="anchor-link" href="#A-IPython-notebook">&#182;</a></h1>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>IPython notebook is great for:</p>
+<ul>
+<li><p>Sharing code!</p>
+</li>
+<li><p>Combining code with text, plots, mathematical expressions, videos, images, and more!</p>
+</li>
+<li><p>Show-off a bit!</p>
+</li>
+<li><p>Interactive teaching (live code)</p>
+</li>
+</ul>
+<p>And.. It has great features such as:</p>
+<ul>
+<li><p>tab-completion</p>
+</li>
+<li><p>syntax highlighting</p>
+</li>
+<li><p>%-prefixed commands</p>
+</li>
+<li><p>Many more...</p>
+</li>
+</ul>
 
 </div>
 </div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Check-it-out">Check it out<a class="anchor-link" href="#Check-it-out">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>IPython, pandas and matplotlib have a number of useful options you can use to make it easier to view and format your data. This notebook collects a bunch of them in one place. I hope this will be a useful reference.</p>
-<p>The original blog posting is on <a href="http://pbpython.com/ipython-pandas-display-tips.html">http://pbpython.com/ipython-pandas-display-tips.html</a></p>
+<p>Check out Ipython notebook here: <a href=http://ipython.org/notebook.html target="_blank">http://ipython.org/notebook.html</a></p>
 
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Import-modules-and-some-sample-data">Import modules and some sample data<a class="anchor-link" href="#Import-modules-and-some-sample-data">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>First, do our standard pandas, numpy and matplotlib imports as well as configure inline displays of plots.</p>
-
+<h2 id="Or-see-that-web-page-embedded-right-here-in-the-notebook:">Or see that web page embedded right here in the notebook:<a class="anchor-link" href="#Or-see-that-web-page-embedded-right-here-in-the-notebook:">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span class="o">&lt;</span><span class="n">iframe</span> <span class="n">src</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ipython</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">notebook</span><span class="o">.</span><span class="n">html</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
 </pre></div>
 
 </div>
@@ -329,16 +328,46 @@ div.prompt {display:none}
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><iframe src=http://ipython.org/notebook.html width=1000 height=400></iframe></p>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Markdown">Markdown<a class="anchor-link" href="#Markdown">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One of the simple things we can do is override the default CSS to customize our DataFrame output.</p>
-<p>This specific example is from - <a href="https://www.youtube.com/watch?v=5JnMutdy6Fw" title="Pandas From The Ground Up">Brandon Rhodes' talk at pycon</a></p>
+<ul>
+<li><p>You can write text in markdown too!</p>
+</li>
+<li><p>Check out some markdown basics here: <a href=http://nbviewer.ipython.org/url/www.astro.washington.edu/users/vanderplas/Astr599/notebooks/Markdown%20Cells.ipynb target="_blank">http://nbviewer.ipython.org/url/www.astro.washington.edu/users/vanderplas/Astr599/notebooks/Markdown%20Cells.ipynb</a>!</p>
+</li>
+</ul>
 
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Python-code">Python code<a class="anchor-link" href="#Python-code">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -347,49 +376,18 @@ div.prompt {display:none}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the purposes of the notebook, I'm defining CSS as a variable but you could easily read in from a file as well.</p>
+<p>This code finds the factorial of a series of number in one line:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">CSS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">body {</span>
-<span class="s2">    margin: 0;</span>
-<span class="s2">    font-family: Helvetica;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe {</span>
-<span class="s2">    border-collapse: collapse;</span>
-<span class="s2">    border: none;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe tr {</span>
-<span class="s2">    border: none;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe td, table.dataframe th {</span>
-<span class="s2">    margin: 0;</span>
-<span class="s2">    border: 1px solid white;</span>
-<span class="s2">    padding-left: 0.25em;</span>
-<span class="s2">    padding-right: 0.25em;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe th:not(:empty) {</span>
-<span class="s2">    background-color: #fec;</span>
-<span class="s2">    text-align: left;</span>
-<span class="s2">    font-weight: normal;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe tr:nth-child(2) th:empty {</span>
-<span class="s2">    border-left: none;</span>
-<span class="s2">    border-right: 1px dashed #888;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe td {</span>
-<span class="s2">    border: 2px solid #ccf;</span>
-<span class="s2">    background-color: #f4f4ff;</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span class="c1">#this is a terrible and awesome way to do this:</span>
+<span class="n">factorial</span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">reduce</span><span class="p">(</span><span class="nb">int</span><span class="o">.</span><span class="n">__mul__</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -397,143 +395,27 @@ div.prompt {display:none}
 </div>
 
 </div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now add this CSS into the current notebook's HTML.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;{}&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CSS</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span class="nb">map</span><span class="p">(</span><span class="n">factorial</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span>
 </pre></div>
 
 </div>
 </div>
-</div>
-
 </div>
 
 <div class="output_wrapper">
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<style>
-body {
-    margin: 0;
-    font-family: Helvetica;
-}
-table.dataframe {
-    border-collapse: collapse;
-    border: none;
-}
-table.dataframe tr {
-    border: none;
-}
-table.dataframe td, table.dataframe th {
-    margin: 0;
-    border: 1px solid white;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-}
-table.dataframe th:not(:empty) {
-    background-color: #fec;
-    text-align: left;
-    font-weight: normal;
-}
-table.dataframe tr:nth-child(2) th:empty {
-    border-left: none;
-    border-right: 1px dashed #888;
-}
-table.dataframe td {
-    border: 2px solid #ccf;
-    background-color: #f4f4ff;
-}
-</style>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="mi">250</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.001</span><span class="p">,</span><span class="mf">0.00001</span><span class="p">]]),</span> <span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;bbb&#39;</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;lib&#39;</span><span class="p">,</span> <span class="s1">&#39;qty1&#39;</span><span class="p">,</span> <span class="s1">&#39;qty2&#39;</span><span class="p">))</span>
-<span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Hover to highlight.&quot;</span><span class="p">)</span>
-<span class="k">print</span> <span class="s1">&#39;             gggggg&#39;</span>
-<span class="k">print</span> <span class="s1">&#39;&#39;</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             gggggg
-
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>lib</th>
-      <th>qty1</th>
-      <th>qty2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>aaa</th>
-      <td>$1.00</td>
-      <td>$2.00</td>
-      <td>$3.00</td>
-    </tr>
-    <tr>
-      <th>bbb</th>
-      <td>$0.10</td>
-      <td>$0.00</td>
-      <td>$0.00</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 6, 24, 120, 720, 5040, 40320]</pre>
 </div>
 
 </div>
@@ -542,338 +424,108 @@ table.dataframe td {
 </div>
 
 </div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Magic-functions">Magic functions<a class="anchor-link" href="#Magic-functions">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This shows the use of builtin timeit magic using the following %-prefix command:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;add_igv.csv&quot;</span><span class="p">)</span>
-<span class="n">SALES</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">random</span>
+<span class="o">%</span><span class="k">timeit</span> a = [random.random() for x in range(1000)]
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
-
 <div class="output_wrapper">
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[69]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>15</td>
-      <td>41372034</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>11</td>
-      <td>126138600</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 94 columns</p>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10000 loops, best of 3: 178 us per loop
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The builtin magics include:</p>
+<ul>
+<li><p>Functions that work with code: %run, %edit, etc.</p>
+</li>
+<li><p>Functions to run code in other languages: %%bash %%perl %%ruby %%javascript, etc.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>*See some examples with magic functions here: <a href="http://nbviewer.ipython.org/github/ipython/ipython/blob/1.x/examples/notebooks/Cell%20Magics.ipynb" target="_blank">http://nbviewer.ipython.org/github/ipython/ipython/blob/1.x/examples/notebooks/Cell%20Magics.ipynb</a>.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Display-images">Display images<a class="anchor-link" href="#Display-images">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can display images stored locally like this:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
+<div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;misc-you-dont-say-l.png&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You can see how the CSS is now applied to the DataFrame and how you could easily modify it to customize it to your liking.</p>
-<p>Jupyter notebooks do a good job of automatically displaying information but sometimes you want to force data to display. Fortunately, ipython provides and option. This is especially useful if you want to display multiple dataframes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">display</span><span class="p">(</span><span class="n">SALES</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">SALES</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">SALES</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>2 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>2 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>POS</th>
-      <th>QUAL</th>
-      <th>1KG.afr.freq</th>
-      <th>...</th>
-      <th>SiPhy</th>
-      <th>VQSLOD</th>
-      <th>75bp_mappability</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>$50.00</td>
-      <td>$50.00</td>
-      <td>$2.00</td>
-      <td>...</td>
-      <td>$32.00</td>
-      <td>$50.00</td>
-      <td>$50.00</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>$70441545.42</td>
-      <td>$1262.56</td>
-      <td>$0.00</td>
-      <td>...</td>
-      <td>$13.25</td>
-      <td>$1.18</td>
-      <td>$0.96</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>$98204291.50</td>
-      <td>$1582.31</td>
-      <td>$0.00</td>
-      <td>...</td>
-      <td>$16.90</td>
-      <td>$1.97</td>
-      <td>$1.00</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>$233274548.00</td>
-      <td>$6421.90</td>
-      <td>$0.00</td>
-      <td>...</td>
-      <td>$19.55</td>
-      <td>$4.44</td>
-      <td>$1.00</td>
-    </tr>
-  </tbody>
-</table>
-<p>8 rows × 67 columns</p>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -883,132 +535,20 @@ table.dataframe td {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Using-pandas-settings-to-control-output">Using pandas settings to control output<a class="anchor-link" href="#Using-pandas-settings-to-control-output">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pandas has many different options to control how data is displayed.</p>
-<p>You can use max_rows to control how many rows are displayed</p>
+<p>Or images stored on the web like this:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_rows&quot;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;http://cdn.alltheragefaces.com/img/faces/large/misc-you-dont-say-l.png&quot;</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span> <span class="n">height</span><span class="o">=</span><span class="mi">300</span><span class="o">/&gt;</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[73]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -1018,678 +558,10 @@ table.dataframe td {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Depending on the data set, you may only want to display a smaller number of columns.</p>
+<p><img src="http://cdn.alltheragefaces.com/img/faces/large/misc-you-dont-say-l.png" width=300 height=300/></p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_columns&quot;</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[75]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You can control how many decimal points of precision to display</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[77]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[79]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You can also format floating point numbers using float_format</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;float_format&#39;</span><span class="p">,</span> <span class="s1">&#39;{:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[81]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This does apply to all the data. In our example, applying dollar signs to everything would not be correct for this example.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;float_format&#39;</span><span class="p">,</span> <span class="s1">&#39;${:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">SALES</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt output_prompt">Out[83]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>CHROM</th>
-      <th>POS</th>
-      <th>ID</th>
-      <th>...</th>
-      <th>In repetitive regions</th>
-      <th>75bp_mappability</th>
-      <th>IGV</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>17</td>
-      <td>59545005</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5</td>
-      <td>23527684</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$0.25</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>19</td>
-      <td>10597451</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>16</td>
-      <td>84115458</td>
-      <td>.</td>
-      <td>...</td>
-      <td>No</td>
-      <td>$1.00</td>
-      <td>PASS</td>
-    </tr>
-  </tbody>
-</table>
-<p>50 rows × 94 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Third-Party-Plugins">Third Party Plugins<a class="anchor-link" href="#Third-Party-Plugins">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Qtopian has a useful plugin called qgrid - <a href="https://github.com/quantopian/qgrid">https://github.com/quantopian/qgrid</a></p>
-<p>Import it and install it.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">qgrid</span>
-<span class="n">qgrid</span><span class="o">.</span><span class="n">nbinstall</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Showing the data is straighforward.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">qgrid</span><span class="o">.</span><span class="n">show_grid</span><span class="p">(</span><span class="n">SALES</span><span class="p">,</span> <span class="n">remote_js</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">grid_options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;forceFitColumns&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s1">&#39;defaultColumnWidth&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
 </div></section></section>
 </div>
 </div>

@@ -268,22 +268,7 @@ div.prompt {display:none}
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><p><p><div class="lev1"><a href="#PAH-burden-analysis-summary">PAH burden analysis summary</a></div></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="PAH-burden-analysis-summary">PAH burden analysis summary<a class="anchor-link" href="#PAH-burden-analysis-summary">&#182;</a></h1><ul>
-<li><p>Cases: There are 227 samples, contains 55 trios, 2 trios have low relativeness(JM0015 and JM0018)</p>
-</li>
-<li><p>ontrols: 1911 unaffected silbing from Iossifov 2014</p>
-</li>
-</ul>
+<h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><p><p><div class="lev1"><a href="#PAH-samples-summary">PAH samples summary</a></div><div class="lev1"><a href="#Genes-with-damage-variants">Genes with damage variants</a></div><div class="lev1"><a href="#Enrichment-details">Enrichment details</a></div></p>
 
 </div>
 </div>
@@ -294,9 +279,20 @@ div.prompt {display:none}
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">DROPBOX</span><span class="o">=</span><span class="s1">&#39;/Users/hongjian/Dropbox (CGC)/&#39;</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DROPBOX</span><span class="o">+</span><span class="s1">&#39;analysis/info/&#39;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">DROPBOX</span><span class="o">+</span><span class="s1">&#39;analysis/utilities/&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">info</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">utilities</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -312,11 +308,19 @@ div.prompt {display:none}
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="c1">#https://github.com/HHammond/PrettyPandas</span>
-<span class="c1">#http://melissagymrek.com/python/2014/01/12/ipython-tables.html</span>
-<span class="c1">#http://nbviewer.jupyter.org/gist/chris1610/f2f4a2e9181f6ec22e88</span>
-<span class="c1">#http://nbviewer.jupyter.org/github/pydata/pandas/blob/master/doc/source/html-styling.ipynb</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;float_format&#39;</span><span class="p">,</span> <span class="s1">&#39;{:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">Project</span> <span class="o">=</span> <span class="n">DROPBOX</span> <span class="o">+</span> <span class="s1">&#39;Projects/PAH/&#39;</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">Project</span> <span class="o">+</span> <span class="s1">&#39;pedigree/PAH_trios.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">trios</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span> <span class="n">sample</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">Project</span> <span class="o">+</span> <span class="s1">&#39;pedigree/exclude_by_predict.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">exclude</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span> <span class="n">sample</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span>
+    
+<span class="n">case_file</span> <span class="o">=</span> <span class="p">[</span> <span class="n">Project</span> <span class="o">+</span> <span class="s1">&#39;variants0403/add_igv.csv&#39;</span> <span class="p">]</span>
+<span class="n">case_sample</span> <span class="o">=</span> <span class="n">trios</span> <span class="o">-</span> <span class="n">exclude</span>
+<span class="n">case_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">case_sample</span><span class="p">)</span>
+
+<span class="n">control_file</span> <span class="o">=</span> <span class="p">[</span><span class="n">DROPBOX</span> <span class="o">+</span> <span class="s1">&#39;Projects/SSC/control_1911.csv&#39;</span> <span class="p">]</span>
+<span class="n">control_size</span> <span class="o">=</span> <span class="mi">1911</span>
+<span class="n">not_included</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -326,60 +330,29 @@ div.prompt {display:none}
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">CSS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">body {</span>
-<span class="s2">    margin: 0;</span>
-<span class="s2">    font-family: Helvetica;</span>
-
-<span class="s2">}</span>
-<span class="s2">table.dataframe {</span>
-<span class="s2">    border-collapse: collapse;</span>
-<span class="s2">    border: none;</span>
-<span class="s2">    font-size:200%;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe tr {</span>
-<span class="s2">    border: none;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe td, table.dataframe th {</span>
-<span class="s2">    margin: 0;</span>
-<span class="s2">    border: 1px solid white;</span>
-<span class="s2">    padding-left: 0.25em;</span>
-<span class="s2">    padding-top: 0.25em;</span>
-<span class="s2">    padding-bottom: 0.25em;</span>
-<span class="s2">    padding-right: 0.25em;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe th:not(:empty) {</span>
-<span class="s2">    background-color: #fec;</span>
-<span class="s2">    text-align: center;</span>
-<span class="s2">    font-weight: normal;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe tr:nth-child(2) th:empty {</span>
-<span class="s2">    border-left: none;</span>
-<span class="s2">    border-right: 1px dashed #888;</span>
-<span class="s2">}</span>
-<span class="s2">table.dataframe td {</span>
-<span class="s2">    border: 1px solid #ccf;</span>
-<span class="s2">    background-color: #f4f4ff;</span>
-<span class="s2">}</span>
-<span class="s2">div.output_area pre {</span>
-<span class="s2">font-family: Helvetica;</span>
-<span class="s2">font-size: 100%;</span>
-<span class="s2">}</span>
-<span class="s2">&quot;&quot;&quot;</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="PAH-samples-summary">PAH samples summary<a class="anchor-link" href="#PAH-samples-summary">&#182;</a></h1><ul>
+<li><p>Cases: There are 227 samples, contains 55 trios, 2 trios have low relativeness(JM0015 and JM0018)</p>
+</li>
+<li><p>Controls: 1911 unaffected silbing from Iossifov 2014</p>
+</li>
+</ul>
 
 </div>
 </div>
 </div>
-
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Genes-with-damage-variants">Genes with damage variants<a class="anchor-link" href="#Genes-with-damage-variants">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input_hidden">
@@ -387,8 +360,8 @@ div.prompt {display:none}
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;{}&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CSS</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">get_recur_gene</span><span class="p">(</span><span class="n">case_file</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
 
 </div>
@@ -404,112 +377,143 @@ div.prompt {display:none}
 <div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<style>
-body {
-    margin: 0;
-    font-family: Helvetica;
-
-}
-table.dataframe {
-    border-collapse: collapse;
-    border: none;
-    font-size:200%;
-}
-table.dataframe tr {
-    border: none;
-}
-table.dataframe td, table.dataframe th {
-    margin: 0;
-    border: 1px solid white;
-    padding-left: 0.25em;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    padding-right: 0.25em;
-}
-table.dataframe th:not(:empty) {
-    background-color: #fec;
-    text-align: center;
-    font-weight: normal;
-}
-table.dataframe tr:nth-child(2) th:empty {
-    border-left: none;
-    border-right: 1px dashed #888;
-}
-table.dataframe td {
-    border: 1px solid #ccf;
-    background-color: #f4f4ff;
-}
-div.output_area pre {
-font-family: Helvetica;
-font-size: 100%;
-}
-</style>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="mi">250</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.precision&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">0.001</span><span class="p">,</span><span class="mf">0.00001</span><span class="p">]]),</span> <span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;bbb&#39;</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;lib&#39;</span><span class="p">,</span> <span class="s1">&#39;qty1&#39;</span><span class="p">,</span> <span class="s1">&#39;qty2&#39;</span><span class="p">))</span>
-<span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Hover to highlight.&quot;</span><span class="p">)</span>
-<span class="k">print</span> <span class="s1">&#39;             gggggg&#39;</span>
-<span class="k">print</span> <span class="s1">&#39;&#39;</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             gggggg
-
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt"></div>
-
-<div class="output_html rendered_html output_subarea ">
 <div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>lib</th>
-      <th>qty1</th>
-      <th>qty2</th>
+      <th>LGD</th>
+      <th>DMIS</th>
+      <th>Total</th>
+      <th>proband</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>aaa</th>
-      <td>1.00</td>
-      <td>2.00</td>
-      <td>3.00</td>
+      <th>TBX4</th>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>FPPH9002,JM847</td>
     </tr>
     <tr>
-      <th>bbb</th>
-      <td>0.10</td>
-      <td>0.00</td>
-      <td>0.00</td>
+      <th>ZMYM2</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM630</td>
+    </tr>
+    <tr>
+      <th>KEAP1</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM852</td>
+    </tr>
+    <tr>
+      <th>ZNF620</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM0004</td>
+    </tr>
+    <tr>
+      <th>EMC8</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM1307</td>
+    </tr>
+    <tr>
+      <th>NUCB1</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM171</td>
+    </tr>
+    <tr>
+      <th>HNRNPF</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>FPPH5703</td>
+    </tr>
+    <tr>
+      <th>AMOT</th>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>JM0004</td>
+    </tr>
+    <tr>
+      <th>TRH</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM0028</td>
+    </tr>
+    <tr>
+      <th>ACVRL1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM0057</td>
+    </tr>
+    <tr>
+      <th>RBL2</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM0013</td>
+    </tr>
+    <tr>
+      <th>MBTPS1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM0024</td>
+    </tr>
+    <tr>
+      <th>NOTCH1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM1357</td>
+    </tr>
+    <tr>
+      <th>ATP6V0A2</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM1344</td>
+    </tr>
+    <tr>
+      <th>ABCC8</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM559</td>
+    </tr>
+    <tr>
+      <th>SLC25A24</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM216</td>
+    </tr>
+    <tr>
+      <th>MAPK6</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM0028</td>
+    </tr>
+    <tr>
+      <th>BMPR2</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>JM625</td>
     </tr>
   </tbody>
 </table>
@@ -528,7 +532,749 @@ font-size: 100%;
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre> 
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># PAH burden analysis summary</span>
+   <span class="o">-</span> <span class="n">Dmis</span><span class="p">:</span> <span class="n">Damage</span> <span class="n">by</span> <span class="n">metaSVM</span><span class="p">,</span> <span class="n">pd_mis</span><span class="p">:</span> <span class="n">T</span> <span class="n">by</span> <span class="n">metaSVM</span><span class="p">,</span> <span class="n">D</span> <span class="n">by</span> <span class="n">pp2</span> <span class="ow">and</span> <span class="n">CADD</span> <span class="o">&gt;</span> <span class="mi">15</span>
+   <span class="o">-</span> <span class="n">pli</span> <span class="n">score</span> <span class="n">using</span> <span class="n">ExAC</span> <span class="n">excluding</span> <span class="n">TCGA</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">geneset</span> <span class="o">=</span> <span class="n">All_gene</span> 
+<span class="c1"># case part </span>
+<span class="n">case_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">case_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">,</span> <span class="n">case_sample</span><span class="p">)</span>
+<span class="c1"># control part </span>
+<span class="n">control_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">control_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">)</span>
+<span class="n">df_allgene</span> <span class="o">=</span> <span class="n">get_pandas_table</span><span class="p">(</span><span class="n">case_counts</span><span class="p">,</span> <span class="n">case_size</span><span class="p">,</span> <span class="n">control_counts</span><span class="p">,</span> <span class="n">control_size</span><span class="p">)</span>
+<span class="n">df_allgene</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;All gene:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">geneset</span><span class="p">))</span>
+
+<span class="n">geneset</span> <span class="o">=</span> <span class="n">HHE</span>
+<span class="c1"># case part </span>
+<span class="n">case_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">case_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">,</span> <span class="n">case_sample</span><span class="p">)</span>
+<span class="c1"># control part </span>
+<span class="n">control_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">control_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">)</span>
+<span class="n">df_HHEgene</span> <span class="o">=</span> <span class="n">get_pandas_table</span><span class="p">(</span><span class="n">case_counts</span><span class="p">,</span> <span class="n">case_size</span><span class="p">,</span> <span class="n">control_counts</span><span class="p">,</span> <span class="n">control_size</span><span class="p">)</span>
+<span class="n">df_HHEgene</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;HHE gene:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">geneset</span><span class="p">))</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">Project</span> <span class="o">+</span> <span class="s1">&#39;gene_of_interest.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">geneset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">gene</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">gene</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span>
+<span class="c1"># case part </span>
+<span class="n">case_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">case_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">,</span> <span class="n">case_sample</span><span class="p">)</span>
+<span class="c1"># control part </span>
+<span class="n">control_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">control_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">)</span>
+<span class="n">df_interest</span> <span class="o">=</span> <span class="n">get_pandas_table</span><span class="p">(</span><span class="n">case_counts</span><span class="p">,</span> <span class="n">case_size</span><span class="p">,</span> <span class="n">control_counts</span><span class="p">,</span> <span class="n">control_size</span><span class="p">)</span>
+<span class="n">df_interest</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;gene_of_interest:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">geneset</span><span class="p">))</span>
+
+
+<span class="n">geneset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">gene</span> <span class="k">for</span> <span class="n">gene</span><span class="p">,</span> <span class="n">pli_score</span> <span class="ow">in</span> <span class="n">PLI</span><span class="o">.</span><span class="n">iteritems</span><span class="p">()</span> <span class="k">if</span> <span class="n">pli_score</span> <span class="o">&gt;=</span> <span class="mf">0.9</span><span class="p">)</span>
+<span class="c1"># case part </span>
+<span class="n">case_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">case_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">,</span> <span class="n">case_sample</span><span class="p">)</span>
+<span class="c1"># control part </span>
+<span class="n">control_counts</span> <span class="o">=</span>  <span class="n">count_mutations</span><span class="p">(</span><span class="n">control_file</span><span class="p">,</span> <span class="n">geneset</span><span class="p">,</span> <span class="n">not_included</span><span class="p">)</span>
+<span class="n">df_pli</span> <span class="o">=</span> <span class="n">get_pandas_table</span><span class="p">(</span><span class="n">case_counts</span><span class="p">,</span> <span class="n">case_size</span><span class="p">,</span> <span class="n">control_counts</span><span class="p">,</span> <span class="n">control_size</span><span class="p">)</span>
+<span class="n">df_pli</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;pLI&gt;=0.9:&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">geneset</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Enrichment-details">Enrichment details<a class="anchor-link" href="#Enrichment-details">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">dfs</span> <span class="o">=</span> <span class="p">[</span><span class="n">df_allgene</span><span class="p">,</span> <span class="n">df_interest</span><span class="p">,</span> <span class="n">df_pli</span><span class="p">,</span> <span class="n">df_HHEgene</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">df</span> <span class="ow">in</span> <span class="n">dfs</span><span class="p">:</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Case:53</th>
+      <th>Control:1911</th>
+      <th>Enrichment</th>
+      <th>Pvalue</th>
+      <th># risk genes</th>
+    </tr>
+    <tr>
+      <th>All gene:18864</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>protein</th>
+      <td>44</td>
+      <td>1332</td>
+      <td>1.19</td>
+      <td>0.244</td>
+      <td>7.06</td>
+    </tr>
+    <tr>
+      <th>LGD</th>
+      <td>9</td>
+      <td>178</td>
+      <td>1.82</td>
+      <td>0.106</td>
+      <td>4.06</td>
+    </tr>
+    <tr>
+      <th>frameshift</th>
+      <td>4</td>
+      <td>90</td>
+      <td>1.6</td>
+      <td>0.325</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>5</td>
+      <td>64</td>
+      <td>2.82</td>
+      <td>0.0388</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <th>splicing</th>
+      <td>0</td>
+      <td>24</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.666</td>
+    </tr>
+    <tr>
+      <th>inframe</th>
+      <td>1</td>
+      <td>30</td>
+      <td>1.2</td>
+      <td>0.572</td>
+      <td>0.168</td>
+    </tr>
+    <tr>
+      <th>MIS</th>
+      <td>34</td>
+      <td>1124</td>
+      <td>1.09</td>
+      <td>0.586</td>
+      <td>2.83</td>
+    </tr>
+    <tr>
+      <th>DMIS_metaSVM</th>
+      <td>10</td>
+      <td>215</td>
+      <td>1.68</td>
+      <td>0.143</td>
+      <td>4.04</td>
+    </tr>
+    <tr>
+      <th>LGD_dmis</th>
+      <td>19</td>
+      <td>393</td>
+      <td>1.74</td>
+      <td>0.0222</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <th>pd_mis</th>
+      <td>5</td>
+      <td>282</td>
+      <td>0.639</td>
+      <td>0.462</td>
+      <td>-2.82</td>
+    </tr>
+    <tr>
+      <th>silent</th>
+      <td>20</td>
+      <td>483</td>
+      <td>1.49</td>
+      <td>0.0958</td>
+      <td>6.6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Case:53</th>
+      <th>Control:1911</th>
+      <th>Enrichment</th>
+      <th>Pvalue</th>
+      <th># risk genes</th>
+    </tr>
+    <tr>
+      <th>gene_of_interest:30</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>protein</th>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>LGD</th>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>frameshift</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>splicing</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>inframe</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>MIS</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>DMIS_metaSVM</th>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>LGD_dmis</th>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>pd_mis</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>silent</th>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.0555</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Case:53</th>
+      <th>Control:1911</th>
+      <th>Enrichment</th>
+      <th>Pvalue</th>
+      <th># risk genes</th>
+    </tr>
+    <tr>
+      <th>pLI&gt;=0.9:3126</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>protein</th>
+      <td>15</td>
+      <td>359</td>
+      <td>1.51</td>
+      <td>0.147</td>
+      <td>5.04</td>
+    </tr>
+    <tr>
+      <th>LGD</th>
+      <td>2</td>
+      <td>41</td>
+      <td>1.76</td>
+      <td>0.324</td>
+      <td>0.863</td>
+    </tr>
+    <tr>
+      <th>frameshift</th>
+      <td>1</td>
+      <td>19</td>
+      <td>1.9</td>
+      <td>0.421</td>
+      <td>0.473</td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>1</td>
+      <td>15</td>
+      <td>2.4</td>
+      <td>0.354</td>
+      <td>0.584</td>
+    </tr>
+    <tr>
+      <th>splicing</th>
+      <td>0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.194</td>
+    </tr>
+    <tr>
+      <th>inframe</th>
+      <td>0</td>
+      <td>10</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.277</td>
+    </tr>
+    <tr>
+      <th>MIS</th>
+      <td>13</td>
+      <td>308</td>
+      <td>1.52</td>
+      <td>0.163</td>
+      <td>4.46</td>
+    </tr>
+    <tr>
+      <th>DMIS_metaSVM</th>
+      <td>4</td>
+      <td>65</td>
+      <td>2.22</td>
+      <td>0.116</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <th>LGD_dmis</th>
+      <td>6</td>
+      <td>106</td>
+      <td>2.04</td>
+      <td>0.13</td>
+      <td>3.06</td>
+    </tr>
+    <tr>
+      <th>pd_mis</th>
+      <td>4</td>
+      <td>109</td>
+      <td>1.32</td>
+      <td>0.552</td>
+      <td>0.977</td>
+    </tr>
+    <tr>
+      <th>silent</th>
+      <td>9</td>
+      <td>120</td>
+      <td>2.7</td>
+      <td>0.00857</td>
+      <td>5.67</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+<div class="output_html rendered_html output_subarea ">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Case:53</th>
+      <th>Control:1911</th>
+      <th>Enrichment</th>
+      <th>Pvalue</th>
+      <th># risk genes</th>
+    </tr>
+    <tr>
+      <th>HHE gene:4398</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>protein</th>
+      <td>13</td>
+      <td>388</td>
+      <td>1.21</td>
+      <td>0.442</td>
+      <td>2.24</td>
+    </tr>
+    <tr>
+      <th>LGD</th>
+      <td>4</td>
+      <td>57</td>
+      <td>2.53</td>
+      <td>0.0826</td>
+      <td>2.42</td>
+    </tr>
+    <tr>
+      <th>frameshift</th>
+      <td>2</td>
+      <td>25</td>
+      <td>2.88</td>
+      <td>0.164</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>2</td>
+      <td>21</td>
+      <td>3.43</td>
+      <td>0.127</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>splicing</th>
+      <td>0</td>
+      <td>11</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.305</td>
+    </tr>
+    <tr>
+      <th>inframe</th>
+      <td>0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-0.25</td>
+    </tr>
+    <tr>
+      <th>MIS</th>
+      <td>9</td>
+      <td>322</td>
+      <td>1.01</td>
+      <td>0.866</td>
+      <td>0.0696</td>
+    </tr>
+    <tr>
+      <th>DMIS_metaSVM</th>
+      <td>3</td>
+      <td>70</td>
+      <td>1.55</td>
+      <td>0.451</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <th>LGD_dmis</th>
+      <td>7</td>
+      <td>127</td>
+      <td>1.99</td>
+      <td>0.0975</td>
+      <td>3.48</td>
+    </tr>
+    <tr>
+      <th>pd_mis</th>
+      <td>2</td>
+      <td>103</td>
+      <td>0.7</td>
+      <td>1</td>
+      <td>-0.857</td>
+    </tr>
+    <tr>
+      <th>silent</th>
+      <td>9</td>
+      <td>132</td>
+      <td>2.46</td>
+      <td>0.0147</td>
+      <td>5.34</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">CSS</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+
+<span class="s2">body {</span>
+<span class="s2">    margin: 0;</span>
+<span class="s2">    font-family: Helvetica;</span>
+
+<span class="s2">}</span>
+<span class="s2">table.dataframe {</span>
+<span class="s2">    border-collapse: collapse;</span>
+<span class="s2">    border: none;</span>
+<span class="s2">    font-size:18px;</span>
+<span class="s2">}</span>
+<span class="s2">table.dataframe tr {</span>
+<span class="s2">    border: none;</span>
+<span class="s2">}</span>
+<span class="s2">table.dataframe td, table.dataframe th {</span>
+<span class="s2">    margin: 0;</span>
+<span class="s2">    border: 1px solid white;</span>
+<span class="s2">    padding-left: 0.25em;</span>
+<span class="s2">    padding-top: 0.25em;</span>
+<span class="s2">    padding-bottom: 0.25em;</span>
+<span class="s2">    padding-right: 0.25em;</span>
+<span class="s2">}</span>
+<span class="s2">table.dataframe th:not(:empty) {</span>
+<span class="s2">    background-color: #fec;</span>
+<span class="s2">    text-align: center;</span>
+<span class="s2">    font-weight: normal;</span>
+<span class="s2">    </span>
+<span class="s2">}</span>
+
+<span class="s2">table.dataframe tr:nth-child(2) th:empty {</span>
+<span class="s2">    border-left: none;</span>
+<span class="s2">    border-right: 1px dashed #888;</span>
+<span class="s2">}</span>
+<span class="s2">table.dataframe td {</span>
+<span class="s2">    border: 2px solid #ccf;</span>
+<span class="s2">    background-color: #f4f4ff;</span>
+<span class="s2">    text-align: center;</span>
+<span class="s2">    min-width: 40px;</span>
+<span class="s2">}</span>
+<span class="s2">div.output_area pre {</span>
+<span class="s2">font-family: Helvetica;</span>
+<span class="s2">font-size: 100%;</span>
+<span class="s2">}</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="c1"># &lt;col width=400&gt; min-width: 40px;</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&lt;style&gt;{}&lt;/style&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CSS</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<style>
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+
+}
+table.dataframe {
+    border-collapse: collapse;
+    border: none;
+    font-size:18px;
+}
+table.dataframe tr {
+    border: none;
+}
+table.dataframe td, table.dataframe th {
+    margin: 0;
+    border: 1px solid white;
+    padding-left: 0.25em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+table.dataframe th:not(:empty) {
+    background-color: #fec;
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+table.dataframe tr:nth-child(2) th:empty {
+    border-left: none;
+    border-right: 1px dashed #888;
+}
+table.dataframe td {
+    border: 2px solid #ccf;
+    background-color: #f4f4ff;
+    text-align: center;
+    min-width: 40px;
+}
+div.output_area pre {
+font-family: Helvetica;
+font-size: 100%;
+}
+</style>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
 </pre></div>
 
 </div>

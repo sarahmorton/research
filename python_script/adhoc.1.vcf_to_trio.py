@@ -1,4 +1,4 @@
-#!~/src/anaconda2/bin/python
+
 
 import gzip
 import os
@@ -17,11 +17,11 @@ parser.add_option("-v", "--vcf", dest="VCFfile",help="input VCF file", metavar="
 parser.add_option("-p", "--ped", dest="PEDfile",help="input PED file", metavar="PEDfile")
 
 (options, args) = parser.parse_args()
-vcf_name = options.VCFfile
-ped_name = options.PEDfile
+vcf_name = os.path.abspath(options.VCFfile)
+ped_name = os.path.abspath(options.PEDfile)
 
 # make vcf trio dir
-trio_dir = '/'.join(os.path.abspath(vcf_name).split('/')[:-1])
+trio_dir = os.path.dirname(vcf_name)  
 trio_dir_name = trio_dir+'/vcf_trio/'
 if not os.path.exists(trio_dir_name):
     os.makedirs(trio_dir_name)

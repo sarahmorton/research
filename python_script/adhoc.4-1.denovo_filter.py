@@ -50,16 +50,12 @@ def reads_filter(proband,parents,parameter): # R,A used for checking indel AC is
     DP = float(DP)
     proband_PL = int(PL.split(',')[0])
 
-    if int(AD[alt]) >= 10:
-        return int(AD[alt])/DP >= 0.2 and proband_PL >= parameter['probandPL'] and\
-        Fmaf <= parameter['MAF']/100 and Mmaf <= parameter['MAF']/100 and \
-        int(mDP) >= parameter['PDP'] and int(fDP)>= parameter['PDP'] \
-        and int(mGQ) >=parameter['PGQ'] and int(fGQ) >= parameter['PGQ']
-    else:
-        return int(AD[alt]) >= 6 and int(AD[alt])/DP >= 0.28 and proband_PL >= parameter['probandPL'] and\
-        Fmaf <= parameter['MAF']/100 and Mmaf <= parameter['MAF']/100 and \
-        int(mDP) >= parameter['PDP'] and int(fDP)>= parameter['PDP'] and \
-        int(mGQ) >=parameter['PGQ'] and int(fGQ) >=parameter['PGQ']
+
+    return int(AD[alt]) >= 6  and proband_PL >= parameter['probandPL'] and\
+    Fmaf <= parameter['MAF']/100 and Mmaf <= parameter['MAF']/100 and \
+    int(mDP) >= parameter['PDP'] and int(fDP)>= parameter['PDP'] \
+    and int(mGQ) >=parameter['PGQ'] and int(fGQ) >= parameter['PGQ']
+
         
 def info_filter(variants, snps):
     '''
@@ -160,9 +156,9 @@ parser.add_option("-c", "--csv", dest="CSVfile",help="input CSV file", metavar="
 csv_name = options.CSVfile
 
 csv_name  = os.path.abspath(csv_name)
-parameter = {'snp':{'MAF': 3.5, 'PDP':10, 'PGQ':30,'probandPL':70}, \
-             'indel': {'MAF': 3.5, 'PDP':10, 'PGQ':30,'probandPL':70},\
-             'general':{'AC':3, 'SegDup':0.99}}
+parameter = {'snp':{'MAF': 5, 'PDP':8, 'PGQ':30,'probandPL':30}, \
+             'indel': {'MAF': 5, 'PDP':10, 'PGQ':30,'probandPL':70},\
+             'general':{'AC':4, 'SegDup':0.99}}
 denovo_snp, denovo_indel = variants_tune(csv_name,parameter)
 print '%s denovo snp, %s denovo indels'%(len(denovo_snp), len(denovo_indel))
 

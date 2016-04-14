@@ -31,13 +31,14 @@ echo $ExpandMode
 INDELS=`readlink -f $INDELS` 
 BAM=`readlink -f $BAM` 
 BamNam=$(echo $INDELS | sed s/.txt// )
-DIR=$BamNam".IGV_plots/" ## figure output folder
+DIR=$BamNam'_snapshot' ## figure output folder
 mkdir -p $DIR
 
 ###=========================================================
 ADDRESS="/home/local/ARCS/hq2130/src/IGV_2.3.68/"
 IGVR=$ADDRESS"igv.sh" ## igv 
 SCRF="igv_batch_script_v4.txt" 
+rm -rf $SCRF
 touch $SCRF
 printf "#! /bin/bash\n" >> $SCRF
 
@@ -113,5 +114,5 @@ done < "$INDELS"
 printf "exit \n" >> $SCRF
 ## run IGV
 $IGVR  -g hg19 -b $SCRF	
-rm $SCRF	
+#rm $SCRF	
 	

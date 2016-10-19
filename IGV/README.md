@@ -1,5 +1,4 @@
-https://github.com/macarthur-lab/igv_plotter
-https://github.com/chrisamiller/igvScreenshot
+
 
 
 Variants visualization scripts using IGV. 
@@ -11,4 +10,11 @@ variants file in the format of: CHROM	POS 	BAM_file_name
 
 
 # Example
-sh Generate_IGV_plots.sh -v example/IGV_variants.txt -b example/bam.txt
+```sh Generate_IGV_plots.sh -v example/IGV_variants.txt -b example/bam.txt```
+
+
+
+# Reference
+
+https://github.com/macarthur-lab/igv_plotter
+https://github.com/chrisamiller/igvScreenshot

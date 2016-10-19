@@ -37,7 +37,7 @@ mkdir -p $DIR
 ###=========================================================
 ADDRESS="/home/local/ARCS/hq2130/src/IGV_2.3.68/"
 IGVR=$ADDRESS"igv.sh" ## igv 
-SCRF="igv_batch_script_v4.txt" 
+SCRF=$INDELS.txt
 rm -rf $SCRF
 touch $SCRF
 printf "#! /bin/bash\n" >> $SCRF
@@ -49,7 +49,6 @@ while read line
 do
 	## Step 1: write the tmp IGV igv_batch_script.txt
 	
-	##printf "$line"
 	NAME=`echo $line | cut -d ' ' -f 1`
 	VALUE=`echo $line | cut -d ' ' -f 2`
 	SAMPLE=`echo $line | cut -d  ' ' -f 3`
@@ -58,7 +57,7 @@ do
 	i=1
 	for ONE in $SAMS;
  	do	
- 		ONEBAM=`grep $ONE "$BAM"`
+ 		ONEBAM=`grep $ONE "$BAM"` # `grep $ONE "$BAM" | cut -f1`
  		#echo $ONE, $BAM, $ONEBAM
 		if [[ "$ONEBAM" != "" ]]
 		then
@@ -72,23 +71,16 @@ do
 	done
 
 	
-	if [[ $kk -gt 1 ]];then
-		if [[  "$BAMS0" != "$BAMS" ]];then
-			printf "new\n" >> $SCRF
-			printf "genome hg19\n"  >> $SCRF
-			printf "load  $BAMS\n" >> $SCRF
-			printf "snapshotDirectory $DIR \n" >>  $SCRF
-		fi
-	else
-			printf "new\n" >> $SCRF
-			printf "genome hg19\n"  >> $SCRF
-			printf "load  $BAMS\n" >> $SCRF
-			printf "snapshotDirectory $DIR \n" >>  $SCRF	
+	if [[  "$BAMS0" != "$BAMS" ]];then
+		printf "new\n" >> $SCRF
+		printf "genome hg19\n"  >> $SCRF
+		printf "load  $BAMS\n" >> $SCRF
+		printf "snapshotDirectory $DIR \n" >>  $SCRF
 	fi
 	
 	BAMS0=$BAMS
 	
-	
+
 	let "START=$VALUE - 20"
 	let "END=$VALUE + 20"
 	printf "goto chr$NAME:$START-$END \n" >> $SCRF
@@ -104,8 +96,10 @@ do
 		
 
 	fi
+
+
 	printf "maxPanelHeight 300 \n" >> $SCRF
-	printf "snapshot $SAMPLE,$NAME.$START.$END.png \n" >> $SCRF
+	printf "snapshot $SAMPLE.$NAME.$VALUE.png \n" >> $SCRF
 	printf "\n" >> $SCRF
 	
 	let kk+=1

@@ -6,12 +6,16 @@ The accuracy is higher among snps and there still have many false positive among
 
 ### Requirement
 [PIL] (https://github.com/python-pillow/Pillow)
+
 [keras] (https://github.com/fchollet/keras)
 
 
 ### Tutorials
 
 [preprocess one image] (process_images.ipynb)
+
 [prepare for training data] (prepare_training_data.ipynb)
+
 [train a convolution neural network model] (IGV_cnv_train.ipynb)
+
 [IGV prediction](IGV_prediction.ipynb)

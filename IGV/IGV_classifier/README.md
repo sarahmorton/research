@@ -12,10 +12,10 @@ The accuracy is higher among snps and there still have many false positive among
 
 ### Tutorials
 
-[preprocess one image] (process_images.ipynb)
+- [preprocess one image] (process_images.ipynb)
 
-[prepare for training data] (prepare_training_data.ipynb)
+- [prepare for training data] (prepare_training_data.ipynb)
 
-[train a convolution neural network model] (IGV_cnv_train.ipynb)
+- [train a convolution neural network model] (IGV_cnv_train.ipynb)
 
-[IGV prediction](IGV_prediction.ipynb)
+- [IGV prediction](IGV_prediction.ipynb)

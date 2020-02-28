@@ -1,0 +1,21 @@
+###For DNV analysis, proband refers to child. Subject refers to any individual (proband or parents)
+
+###STEP1: Make single file to map to all bam/cram files for FreeBayes (freebayes_input). One line per subject, with proband ID to unify trios
+##format with 3 columns: file path, subject ID, proband ID
+
+###STEP2: Make variant bed file to identify regions for FreeBayes to call variants within. One file per proband
+##format with 3 columns: chromosome, start, end (default is 200bp region centered on candidate DNV)
+
+###STEP3: Launch FreeBayes on cluster
+while read x y z; do sbatch freebayes_targets.slurm $x $y $z; done < freebayes_input
+
+###STEP4: bgzip FreeBayes VCFs and annotate with repeatmasker
+
+###STEP5: compare candidate DNVs with FreeBayes output for each proband
+##first, make comparison file containing 7 columns for each proband (candidate_variant_input)
+##7 columns: proband ID, chromosome, position, reference allele, alternatively allele, tier (quality score for candidate variant), unique ID for variant
+
+##second, run script for each proband to do filtering:
+srun trio_vcf_filter.R <proband_vcf> <mom_vcf> <dad_vcf> <candidate_variant_input>
+
+##output will be reconciliation of candidate variants with FreeBayes calls
